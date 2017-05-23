@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+ssh://git@github.com/xiaobudongzhang/shipit_cli_more.git"
   },
+  "bin": {
+    "shipit": "./bin/shipit"
+  },
   "keywords": [
     "shipit",
     "deploy"
