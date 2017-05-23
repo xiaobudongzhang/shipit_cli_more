@@ -1,0 +1,23 @@
+{
+  "name": "shipit_cli_more",
+  "version": "1.0.0",
+  "description": "添加各种参数",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/xiaobudongzhang/shipit_cli_more.git"
+  },
+  "keywords": [
+    "shipit",
+    "deploy"
+  ],
+  "author": "byz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xiaobudongzhang/shipit_cli_more/issues"
+  },
+  "homepage": "https://github.com/xiaobudongzhang/shipit_cli_more#readme"
+}
