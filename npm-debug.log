@@ -1,0 +1,1875 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'https://github.com/xiaobudongzhang/shipit_cli_more' ]
+2 info using npm@3.10.8
+3 info using node@v6.9.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData https://github.com/xiaobudongzhang/shipit_cli_more
+8 silly fetchOtherPackageData https://github.com/xiaobudongzhang/shipit_cli_more
+9 silly cache add args [ 'https://github.com/xiaobudongzhang/shipit_cli_more', null ]
+10 verbose cache add spec https://github.com/xiaobudongzhang/shipit_cli_more
+11 silly cache add parsed spec Result {
+11 silly cache add   raw: 'https://github.com/xiaobudongzhang/shipit_cli_more',
+11 silly cache add   scope: null,
+11 silly cache add   escapedName: null,
+11 silly cache add   name: null,
+11 silly cache add   rawSpec: 'https://github.com/xiaobudongzhang/shipit_cli_more',
+11 silly cache add   spec: 'git+https://github.com/xiaobudongzhang/shipit_cli_more.git',
+11 silly cache add   type: 'hosted',
+11 silly cache add   hosted:
+11 silly cache add    { type: 'github',
+11 silly cache add      ssh: 'git@github.com:xiaobudongzhang/shipit_cli_more.git',
+11 silly cache add      sshUrl: 'git+ssh://git@github.com/xiaobudongzhang/shipit_cli_more.git',
+11 silly cache add      httpsUrl: 'git+https://github.com/xiaobudongzhang/shipit_cli_more.git',
+11 silly cache add      gitUrl: 'git://github.com/xiaobudongzhang/shipit_cli_more.git',
+11 silly cache add      shortcut: 'github:xiaobudongzhang/shipit_cli_more',
+11 silly cache add      directUrl: 'https://raw.githubusercontent.com/xiaobudongzhang/shipit_cli_more/master/package.json' } }
+12 verbose addRemoteGit caching https://github.com/xiaobudongzhang/shipit_cli_more
+13 verbose addRemoteGit git+https://github.com/xiaobudongzhang/shipit_cli_more.git is a repository hosted by github
+14 silly tryClone cloning git+https://github.com/xiaobudongzhang/shipit_cli_more.git via git+https://github.com/xiaobudongzhang/shipit_cli_more.git
+15 verbose tryClone git-https-github-com-xiaobudongzhang-shipit-cli-more-git-c4fca3a2 not in flight; caching
+16 verbose correctMkdir /root/.npm/_git-remotes correctMkdir not in flight; initializing
+17 info git [ 'config', '--get', 'remote.origin.url' ]
+18 silly validateExistingRemote git+https://github.com/xiaobudongzhang/shipit_cli_more.git remote.origin.url: https://github.com/xiaobudongzhang/shipit_cli_more.git
+19 verbose validateExistingRemote git+https://github.com/xiaobudongzhang/shipit_cli_more.git is updating existing cached remote /root/.npm/_git-remotes/git-https-github-com-xiaobudongzhang-shipit-cli-more-git-c4fca3a2
+20 info git [ 'fetch', '-a', 'origin' ]
+21 verbose updateRemote git fetch -a origin (https://github.com/xiaobudongzhang/shipit_cli_more.git)
+22 verbose correctMkdir /root/.npm/_git-remotes correctMkdir not in flight; initializing
+23 verbose setPermissions git+https://github.com/xiaobudongzhang/shipit_cli_more.git set permissions on /root/.npm/_git-remotes/git-https-github-com-xiaobudongzhang-shipit-cli-more-git-c4fca3a2
+24 verbose resolveHead git+https://github.com/xiaobudongzhang/shipit_cli_more.git original treeish: master
+25 info git [ 'rev-list', '-n1', 'master' ]
+26 silly resolveHead git+https://github.com/xiaobudongzhang/shipit_cli_more.git resolved treeish: 1bd8185af9bcc35ac5e5d80f396e8aeb61b1071a
+27 verbose resolveHead git+https://github.com/xiaobudongzhang/shipit_cli_more.git resolved Git URL: git+https://github.com/xiaobudongzhang/shipit_cli_more.git#1bd8185af9bcc35ac5e5d80f396e8aeb61b1071a
+28 silly resolveHead Git working directory: /tmp/npm-51129-9adef360/git-cache-42c5bc06/1bd8185af9bcc35ac5e5d80f396e8aeb61b1071a
+29 info git [ 'clone',
+29 info git   '/root/.npm/_git-remotes/git-https-github-com-xiaobudongzhang-shipit-cli-more-git-c4fca3a2',
+29 info git   '/tmp/npm-51129-9adef360/git-cache-42c5bc06/1bd8185af9bcc35ac5e5d80f396e8aeb61b1071a' ]
+30 verbose cloneResolved git+https://github.com/xiaobudongzhang/shipit_cli_more.git clone 正克隆到 '/tmp/npm-51129-9adef360/git-cache-42c5bc06/1bd8185af9bcc35ac5e5d80f396e8aeb61b1071a'...
+30 verbose cloneResolved 完成。
+31 info git [ 'checkout', '1bd8185af9bcc35ac5e5d80f396e8aeb61b1071a' ]
+32 verbose checkoutTreeish git+https://github.com/xiaobudongzhang/shipit_cli_more.git checkout Note: checking out '1bd8185af9bcc35ac5e5d80f396e8aeb61b1071a'.
+32 verbose checkoutTreeish
+32 verbose checkoutTreeish You are in 'detached HEAD' state. You can look around, make experimental
+32 verbose checkoutTreeish changes and commit them, and you can discard any commits you make in this
+32 verbose checkoutTreeish state without impacting any branches by performing another checkout.
+32 verbose checkoutTreeish
+32 verbose checkoutTreeish If you want to create a new branch to retain commits you create, you may
+32 verbose checkoutTreeish do so (now or later) by using -b with the checkout command again. Example:
+32 verbose checkoutTreeish
+32 verbose checkoutTreeish   git checkout -b new_branch_name
+32 verbose checkoutTreeish
+32 verbose checkoutTreeish HEAD 目前位于 1bd8185... addd
+33 info git [ 'submodule', '-q', 'update', '--init', '--recursive' ]
+34 verbose updateSubmodules git+https://github.com/xiaobudongzhang/shipit_cli_more.git submodule update
+35 verbose addLocalDirectory /root/.npm/shipit_cli_more/1.0.0/package.tgz not in flight; packing
+36 verbose correctMkdir /root/.npm correctMkdir not in flight; initializing
+37 verbose tar pack [ '/root/.npm/shipit_cli_more/1.0.0/package.tgz',
+37 verbose tar pack   '/tmp/npm-51129-9adef360/git-cache-42c5bc06/1bd8185af9bcc35ac5e5d80f396e8aeb61b1071a' ]
+38 verbose tarball /root/.npm/shipit_cli_more/1.0.0/package.tgz
+39 verbose folder /tmp/npm-51129-9adef360/git-cache-42c5bc06/1bd8185af9bcc35ac5e5d80f396e8aeb61b1071a
+40 verbose addLocalTarball adding from inside cache /root/.npm/shipit_cli_more/1.0.0/package.tgz
+41 verbose correctMkdir /root/.npm correctMkdir not in flight; initializing
+42 verbose addRemoteGit data._from: git+https://github.com/xiaobudongzhang/shipit_cli_more.git
+43 verbose addRemoteGit data._resolved: git+https://github.com/xiaobudongzhang/shipit_cli_more.git#1bd8185af9bcc35ac5e5d80f396e8aeb61b1071a
+44 silly cache afterAdd shipit_cli_more@1.0.0
+45 verbose afterAdd /root/.npm/shipit_cli_more/1.0.0/package/package.json not in flight; writing
+46 verbose correctMkdir /root/.npm correctMkdir not in flight; initializing
+47 verbose afterAdd /root/.npm/shipit_cli_more/1.0.0/package/package.json written
+48 silly install normalizeTree
+49 silly loadCurrentTree Finishing
+50 silly loadIdealTree Starting
+51 silly install loadIdealTree
+52 silly cloneCurrentTree Starting
+53 silly install cloneCurrentTreeToIdealTree
+54 silly cloneCurrentTree Finishing
+55 silly loadShrinkwrap Starting
+56 silly install loadShrinkwrap
+57 silly loadShrinkwrap Finishing
+58 silly loadAllDepsIntoIdealTree Starting
+59 silly install loadAllDepsIntoIdealTree
+60 silly resolveWithNewModule shipit_cli_more@1.0.0 checking installable status
+61 silly loadAllDepsIntoIdealTree Finishing
+62 silly loadIdealTree Finishing
+63 silly currentTree lib
+63 silly currentTree └─┬ shipit_cli_more@1.0.0
+63 silly currentTree   ├── ansi-regex@2.1.1
+63 silly currentTree   ├── ansi-styles@2.2.1
+63 silly currentTree   ├── arr-diff@2.0.0
+63 silly currentTree   ├── arr-flatten@1.0.3
+63 silly currentTree   ├── array-unique@0.2.1
+63 silly currentTree   ├── async@0.2.10
+63 silly currentTree   ├── bluebird@3.5.0
+63 silly currentTree   ├── braces@1.8.5
+63 silly currentTree   ├── chalk@1.1.3
+63 silly currentTree   ├── detect-file@0.1.0
+63 silly currentTree   ├── end-of-stream@0.1.5
+63 silly currentTree   ├── escape-string-regexp@1.0.5
+63 silly currentTree   ├── expand-brackets@0.1.5
+63 silly currentTree   ├── expand-range@1.8.2
+63 silly currentTree   ├── expand-tilde@1.2.2
+63 silly currentTree   ├── extend@3.0.1
+63 silly currentTree   ├── extglob@0.3.2
+63 silly currentTree   ├── filename-regex@2.0.1
+63 silly currentTree   ├── fill-range@2.2.3
+63 silly currentTree   ├── findup-sync@0.4.3
+63 silly currentTree   ├── fined@1.0.2
+63 silly currentTree   ├── flagged-respawn@0.3.2
+63 silly currentTree   ├── for-in@1.0.2
+63 silly currentTree   ├── for-own@0.1.5
+63 silly currentTree   ├── fs-exists-sync@0.1.0
+63 silly currentTree   ├── glob-base@0.3.0
+63 silly currentTree   ├── glob-parent@2.0.0
+63 silly currentTree   ├── global-modules@0.2.3
+63 silly currentTree   ├── global-prefix@0.1.5
+63 silly currentTree   ├── has-ansi@2.0.0
+63 silly currentTree   ├── homedir-polyfill@1.0.1
+63 silly currentTree   ├── ini@1.3.4
+63 silly currentTree   ├── interpret@1.0.3
+63 silly currentTree   ├── is-absolute@0.2.6
+63 silly currentTree   ├── is-buffer@1.1.5
+63 silly currentTree   ├── is-dotfile@1.0.2
+63 silly currentTree   ├── is-equal-shallow@0.1.3
+63 silly currentTree   ├── is-extendable@0.1.1
+63 silly currentTree   ├── is-extglob@1.0.0
+63 silly currentTree   ├── is-glob@2.0.1
+63 silly currentTree   ├── is-number@2.1.0
+63 silly currentTree   ├── is-posix-bracket@0.1.1
+63 silly currentTree   ├── is-primitive@2.0.0
+63 silly currentTree   ├── is-relative@0.2.1
+63 silly currentTree   ├── is-unc-path@0.1.2
+63 silly currentTree   ├── is-windows@0.2.0
+63 silly currentTree   ├── isarray@1.0.0
+63 silly currentTree   ├── isexe@2.0.0
+63 silly currentTree   ├── isobject@2.1.0
+63 silly currentTree   ├── kind-of@3.2.2
+63 silly currentTree   ├── liftoff@2.3.0
+63 silly currentTree   ├── lodash.assignwith@4.2.0
+63 silly currentTree   ├── lodash.isempty@4.4.0
+63 silly currentTree   ├── lodash.isplainobject@4.0.6
+63 silly currentTree   ├── lodash.isstring@4.0.1
+63 silly currentTree   ├── lodash.mapvalues@4.6.0
+63 silly currentTree   ├── lodash.pick@4.4.0
+63 silly currentTree   ├── lodash@4.17.4
+63 silly currentTree   ├── map-cache@0.2.2
+63 silly currentTree   ├── micromatch@2.3.11
+63 silly currentTree   ├── minimist@1.2.0
+63 silly currentTree   ├── normalize-path@2.1.1
+63 silly currentTree   ├── object.omit@2.0.1
+63 silly currentTree   ├── once@1.3.3
+63 silly currentTree   ├── orchestrator@0.3.8
+63 silly currentTree   ├── os-homedir@1.0.2
+63 silly currentTree   ├── parse-filepath@1.0.1
+63 silly currentTree   ├── parse-glob@3.0.4
+63 silly currentTree   ├── parse-passwd@1.0.0
+63 silly currentTree   ├── path-parse@1.0.5
+63 silly currentTree   ├── path-root-regex@0.1.2
+63 silly currentTree   ├── path-root@0.1.1
+63 silly currentTree   ├── preserve@0.2.0
+63 silly currentTree   ├── pretty-hrtime@1.0.3
+63 silly currentTree   ├── randomatic@1.1.6
+63 silly currentTree   ├── rechoir@0.6.2
+63 silly currentTree   ├── regex-cache@0.4.3
+63 silly currentTree   ├── remove-trailing-separator@1.0.1
+63 silly currentTree   ├── repeat-element@1.1.2
+63 silly currentTree   ├── repeat-string@1.6.1
+63 silly currentTree   ├── resolve-dir@0.1.1
+63 silly currentTree   ├── resolve@1.3.3
+63 silly currentTree   ├── sequencify@0.0.7
+63 silly currentTree   ├── sprintf-js@1.1.0
+63 silly currentTree   ├─┬ ssh-pool@1.4.1
+63 silly currentTree   │ ├── bluebird@2.11.0
+63 silly currentTree   │ └── lodash@3.10.1
+63 silly currentTree   ├── stream-consume@0.1.0
+63 silly currentTree   ├── stream-line-wrapper@0.1.1
+63 silly currentTree   ├── strip-ansi@3.0.1
+63 silly currentTree   ├── supports-color@2.0.0
+63 silly currentTree   ├── unc-path-regex@0.1.2
+63 silly currentTree   ├── user-home@1.1.1
+63 silly currentTree   ├── v8flags@2.1.1
+63 silly currentTree   ├── whereis@0.4.0
+63 silly currentTree   ├── which@1.2.14
+63 silly currentTree   └── wrappy@1.0.2
+64 silly idealTree lib
+64 silly idealTree └── shipit_cli_more@1.0.0
+65 silly generateActionsToTake Starting
+66 silly install generateActionsToTake
+67 silly generateActionsToTake Finishing
+68 silly diffTrees action count 98
+69 silly diffTrees remove ansi-regex@2.1.1
+70 silly diffTrees remove ansi-styles@2.2.1
+71 silly diffTrees remove arr-flatten@1.0.3
+72 silly diffTrees remove arr-diff@2.0.0
+73 silly diffTrees remove array-unique@0.2.1
+74 silly diffTrees remove async@0.2.10
+75 silly diffTrees remove escape-string-regexp@1.0.5
+76 silly diffTrees remove extend@3.0.1
+77 silly diffTrees remove filename-regex@2.0.1
+78 silly diffTrees remove flagged-respawn@0.3.2
+79 silly diffTrees remove for-in@1.0.2
+80 silly diffTrees remove for-own@0.1.5
+81 silly diffTrees remove fs-exists-sync@0.1.0
+82 silly diffTrees remove detect-file@0.1.0
+83 silly diffTrees remove has-ansi@2.0.0
+84 silly diffTrees remove ini@1.3.4
+85 silly diffTrees remove is-buffer@1.1.5
+86 silly diffTrees remove is-dotfile@1.0.2
+87 silly diffTrees remove is-extendable@0.1.1
+88 silly diffTrees remove is-extglob@1.0.0
+89 silly diffTrees remove extglob@0.3.2
+90 silly diffTrees remove is-glob@2.0.1
+91 silly diffTrees remove glob-parent@2.0.0
+92 silly diffTrees remove glob-base@0.3.0
+93 silly diffTrees remove is-posix-bracket@0.1.1
+94 silly diffTrees remove expand-brackets@0.1.5
+95 silly diffTrees remove is-primitive@2.0.0
+96 silly diffTrees remove is-equal-shallow@0.1.3
+97 silly diffTrees remove is-windows@0.2.0
+98 silly diffTrees remove isarray@1.0.0
+99 silly diffTrees remove isexe@2.0.0
+100 silly diffTrees remove isobject@2.1.0
+101 silly diffTrees remove kind-of@3.2.2
+102 silly diffTrees remove is-number@2.1.0
+103 silly diffTrees remove lodash.assignwith@4.2.0
+104 silly diffTrees remove lodash.isempty@4.4.0
+105 silly diffTrees remove lodash.isplainobject@4.0.6
+106 silly diffTrees remove lodash.isstring@4.0.1
+107 silly diffTrees remove lodash.mapvalues@4.6.0
+108 silly diffTrees remove lodash.pick@4.4.0
+109 silly diffTrees remove map-cache@0.2.2
+110 silly diffTrees remove object.omit@2.0.1
+111 silly diffTrees remove os-homedir@1.0.2
+112 silly diffTrees remove expand-tilde@1.2.2
+113 silly diffTrees remove parse-glob@3.0.4
+114 silly diffTrees remove parse-passwd@1.0.0
+115 silly diffTrees remove homedir-polyfill@1.0.1
+116 silly diffTrees remove path-parse@1.0.5
+117 silly diffTrees remove path-root-regex@0.1.2
+118 silly diffTrees remove path-root@0.1.1
+119 silly diffTrees remove preserve@0.2.0
+120 silly diffTrees remove randomatic@1.1.6
+121 silly diffTrees remove regex-cache@0.4.3
+122 silly diffTrees remove remove-trailing-separator@1.0.1
+123 silly diffTrees remove normalize-path@2.1.1
+124 silly diffTrees remove repeat-element@1.1.2
+125 silly diffTrees remove repeat-string@1.6.1
+126 silly diffTrees remove fill-range@2.2.3
+127 silly diffTrees remove expand-range@1.8.2
+128 silly diffTrees remove braces@1.8.5
+129 silly diffTrees remove micromatch@2.3.11
+130 silly diffTrees remove resolve@1.3.3
+131 silly diffTrees remove rechoir@0.6.2
+132 silly diffTrees remove sequencify@0.0.7
+133 silly diffTrees remove sprintf-js@1.1.0
+134 silly diffTrees remove bluebird@2.11.0
+135 silly diffTrees remove lodash@3.10.1
+136 silly diffTrees remove stream-consume@0.1.0
+137 silly diffTrees remove stream-line-wrapper@0.1.1
+138 silly diffTrees remove strip-ansi@3.0.1
+139 silly diffTrees remove supports-color@2.0.0
+140 silly diffTrees remove unc-path-regex@0.1.2
+141 silly diffTrees remove is-unc-path@0.1.2
+142 silly diffTrees remove is-relative@0.2.1
+143 silly diffTrees remove is-absolute@0.2.6
+144 silly diffTrees remove parse-filepath@1.0.1
+145 silly diffTrees remove fined@1.0.2
+146 silly diffTrees remove user-home@1.1.1
+147 silly diffTrees remove whereis@0.4.0
+148 silly diffTrees remove which@1.2.14
+149 silly diffTrees remove global-prefix@0.1.5
+150 silly diffTrees remove global-modules@0.2.3
+151 silly diffTrees remove resolve-dir@0.1.1
+152 silly diffTrees remove findup-sync@0.4.3
+153 silly diffTrees remove wrappy@1.0.2
+154 silly diffTrees remove once@1.3.3
+155 silly diffTrees remove end-of-stream@0.1.5
+156 silly diffTrees remove bluebird@3.5.0
+157 silly diffTrees remove chalk@1.1.3
+158 silly diffTrees remove interpret@1.0.3
+159 silly diffTrees remove liftoff@2.3.0
+160 silly diffTrees remove lodash@4.17.4
+161 silly diffTrees remove minimist@1.2.0
+162 silly diffTrees remove orchestrator@0.3.8
+163 silly diffTrees remove pretty-hrtime@1.0.3
+164 silly diffTrees remove ssh-pool@1.4.1
+165 silly diffTrees remove v8flags@2.1.1
+166 silly diffTrees update shipit_cli_more@1.0.0
+167 silly decomposeActions action count 105
+168 silly decomposeActions remove ansi-regex@2.1.1
+169 silly decomposeActions remove ansi-styles@2.2.1
+170 silly decomposeActions remove arr-flatten@1.0.3
+171 silly decomposeActions remove arr-diff@2.0.0
+172 silly decomposeActions remove array-unique@0.2.1
+173 silly decomposeActions remove async@0.2.10
+174 silly decomposeActions remove escape-string-regexp@1.0.5
+175 silly decomposeActions remove extend@3.0.1
+176 silly decomposeActions remove filename-regex@2.0.1
+177 silly decomposeActions remove flagged-respawn@0.3.2
+178 silly decomposeActions remove for-in@1.0.2
+179 silly decomposeActions remove for-own@0.1.5
+180 silly decomposeActions remove fs-exists-sync@0.1.0
+181 silly decomposeActions remove detect-file@0.1.0
+182 silly decomposeActions remove has-ansi@2.0.0
+183 silly decomposeActions remove ini@1.3.4
+184 silly decomposeActions remove is-buffer@1.1.5
+185 silly decomposeActions remove is-dotfile@1.0.2
+186 silly decomposeActions remove is-extendable@0.1.1
+187 silly decomposeActions remove is-extglob@1.0.0
+188 silly decomposeActions remove extglob@0.3.2
+189 silly decomposeActions remove is-glob@2.0.1
+190 silly decomposeActions remove glob-parent@2.0.0
+191 silly decomposeActions remove glob-base@0.3.0
+192 silly decomposeActions remove is-posix-bracket@0.1.1
+193 silly decomposeActions remove expand-brackets@0.1.5
+194 silly decomposeActions remove is-primitive@2.0.0
+195 silly decomposeActions remove is-equal-shallow@0.1.3
+196 silly decomposeActions remove is-windows@0.2.0
+197 silly decomposeActions remove isarray@1.0.0
+198 silly decomposeActions remove isexe@2.0.0
+199 silly decomposeActions remove isobject@2.1.0
+200 silly decomposeActions remove kind-of@3.2.2
+201 silly decomposeActions remove is-number@2.1.0
+202 silly decomposeActions remove lodash.assignwith@4.2.0
+203 silly decomposeActions remove lodash.isempty@4.4.0
+204 silly decomposeActions remove lodash.isplainobject@4.0.6
+205 silly decomposeActions remove lodash.isstring@4.0.1
+206 silly decomposeActions remove lodash.mapvalues@4.6.0
+207 silly decomposeActions remove lodash.pick@4.4.0
+208 silly decomposeActions remove map-cache@0.2.2
+209 silly decomposeActions remove object.omit@2.0.1
+210 silly decomposeActions remove os-homedir@1.0.2
+211 silly decomposeActions remove expand-tilde@1.2.2
+212 silly decomposeActions remove parse-glob@3.0.4
+213 silly decomposeActions remove parse-passwd@1.0.0
+214 silly decomposeActions remove homedir-polyfill@1.0.1
+215 silly decomposeActions remove path-parse@1.0.5
+216 silly decomposeActions remove path-root-regex@0.1.2
+217 silly decomposeActions remove path-root@0.1.1
+218 silly decomposeActions remove preserve@0.2.0
+219 silly decomposeActions remove randomatic@1.1.6
+220 silly decomposeActions remove regex-cache@0.4.3
+221 silly decomposeActions remove remove-trailing-separator@1.0.1
+222 silly decomposeActions remove normalize-path@2.1.1
+223 silly decomposeActions remove repeat-element@1.1.2
+224 silly decomposeActions remove repeat-string@1.6.1
+225 silly decomposeActions remove fill-range@2.2.3
+226 silly decomposeActions remove expand-range@1.8.2
+227 silly decomposeActions remove braces@1.8.5
+228 silly decomposeActions remove micromatch@2.3.11
+229 silly decomposeActions remove resolve@1.3.3
+230 silly decomposeActions remove rechoir@0.6.2
+231 silly decomposeActions remove sequencify@0.0.7
+232 silly decomposeActions remove sprintf-js@1.1.0
+233 silly decomposeActions remove bluebird@2.11.0
+234 silly decomposeActions remove lodash@3.10.1
+235 silly decomposeActions remove stream-consume@0.1.0
+236 silly decomposeActions remove stream-line-wrapper@0.1.1
+237 silly decomposeActions remove strip-ansi@3.0.1
+238 silly decomposeActions remove supports-color@2.0.0
+239 silly decomposeActions remove unc-path-regex@0.1.2
+240 silly decomposeActions remove is-unc-path@0.1.2
+241 silly decomposeActions remove is-relative@0.2.1
+242 silly decomposeActions remove is-absolute@0.2.6
+243 silly decomposeActions remove parse-filepath@1.0.1
+244 silly decomposeActions remove fined@1.0.2
+245 silly decomposeActions remove user-home@1.1.1
+246 silly decomposeActions remove whereis@0.4.0
+247 silly decomposeActions remove which@1.2.14
+248 silly decomposeActions remove global-prefix@0.1.5
+249 silly decomposeActions remove global-modules@0.2.3
+250 silly decomposeActions remove resolve-dir@0.1.1
+251 silly decomposeActions remove findup-sync@0.4.3
+252 silly decomposeActions remove wrappy@1.0.2
+253 silly decomposeActions remove once@1.3.3
+254 silly decomposeActions remove end-of-stream@0.1.5
+255 silly decomposeActions remove bluebird@3.5.0
+256 silly decomposeActions remove chalk@1.1.3
+257 silly decomposeActions remove interpret@1.0.3
+258 silly decomposeActions remove liftoff@2.3.0
+259 silly decomposeActions remove lodash@4.17.4
+260 silly decomposeActions remove minimist@1.2.0
+261 silly decomposeActions remove orchestrator@0.3.8
+262 silly decomposeActions remove pretty-hrtime@1.0.3
+263 silly decomposeActions remove ssh-pool@1.4.1
+264 silly decomposeActions remove v8flags@2.1.1
+265 silly decomposeActions fetch shipit_cli_more@1.0.0
+266 silly decomposeActions extract shipit_cli_more@1.0.0
+267 silly decomposeActions test shipit_cli_more@1.0.0
+268 silly decomposeActions preinstall shipit_cli_more@1.0.0
+269 silly decomposeActions build shipit_cli_more@1.0.0
+270 silly decomposeActions install shipit_cli_more@1.0.0
+271 silly decomposeActions postinstall shipit_cli_more@1.0.0
+272 silly decomposeActions finalize shipit_cli_more@1.0.0
+273 silly runTopLevelLifecycles Starting
+274 silly executeActions Starting
+275 silly install executeActions
+276 silly doSerial global-install 0
+277 silly doParallel fetch 1
+278 verbose correctMkdir /root/.npm/_locks correctMkdir not in flight; initializing
+279 verbose lock using /root/.npm/_locks/staging-a072192f34a17023.lock for /usr/lib/node_modules/.staging
+280 silly doParallel extract 1
+281 silly extract shipit_cli_more@1.0.0
+282 verbose unbuild lib/node_modules/.staging/shipit_cli_more-5414b954
+283 silly gentlyRm /usr/lib/node_modules/.staging/shipit_cli_more-5414b954 is being purged from base /usr
+284 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/.staging/shipit_cli_more-5414b954
+285 verbose tar unpack /root/.npm/shipit_cli_more/1.0.0/package.tgz
+286 verbose tar unpacking to /usr/lib/node_modules/.staging/shipit_cli_more-5414b954
+287 silly gentlyRm /usr/lib/node_modules/.staging/shipit_cli_more-5414b954 is being purged
+288 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/.staging/shipit_cli_more-5414b954
+289 silly gunzTarPerm modes [ '755', '644' ]
+290 silly gunzTarPerm extractEntry package.json
+291 silly gunzTarPerm extractEntry README.md
+292 silly gunzTarPerm extractEntry shipit.js
+293 silly gunzTarPerm extractEntry bin/shipit
+294 silly gunzTarPerm extractEntry bin/shipit~
+295 silly gentlyRm /usr/lib/node_modules/.staging/shipit_cli_more-5414b954/node_modules is being purged
+296 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/.staging/shipit_cli_more-5414b954/node_modules
+297 silly doParallel preinstall 1
+298 silly preinstall shipit_cli_more@1.0.0 /usr/lib/node_modules/.staging/shipit_cli_more-5414b954
+299 info lifecycle shipit_cli_more@1.0.0~preinstall: shipit_cli_more@1.0.0
+300 silly lifecycle shipit_cli_more@1.0.0~preinstall: no script for preinstall, continuing
+301 silly doReverseSerial remove 97
+302 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/v8flags
+303 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/v8flags
+304 info lifecycle v8flags@2.1.1~preuninstall: v8flags@2.1.1
+305 silly lifecycle v8flags@2.1.1~preuninstall: no script for preuninstall, continuing
+306 info lifecycle v8flags@2.1.1~uninstall: v8flags@2.1.1
+307 silly lifecycle v8flags@2.1.1~uninstall: no script for uninstall, continuing
+308 verbose unbuild rmStuff v8flags@2.1.1 from /usr/lib/node_modules
+309 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+310 info lifecycle v8flags@2.1.1~postuninstall: v8flags@2.1.1
+311 silly lifecycle v8flags@2.1.1~postuninstall: no script for postuninstall, continuing
+312 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/v8flags is being purged from base /usr
+313 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/v8flags
+314 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/v8flags
+315 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+316 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/ssh-pool
+317 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/ssh-pool
+318 info lifecycle ssh-pool@1.4.1~preuninstall: ssh-pool@1.4.1
+319 silly lifecycle ssh-pool@1.4.1~preuninstall: no script for preuninstall, continuing
+320 info lifecycle ssh-pool@1.4.1~uninstall: ssh-pool@1.4.1
+321 silly lifecycle ssh-pool@1.4.1~uninstall: no script for uninstall, continuing
+322 verbose unbuild rmStuff ssh-pool@1.4.1 from /usr/lib/node_modules
+323 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+324 info lifecycle ssh-pool@1.4.1~postuninstall: ssh-pool@1.4.1
+325 silly lifecycle ssh-pool@1.4.1~postuninstall: no script for postuninstall, continuing
+326 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/ssh-pool is being purged from base /usr
+327 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/ssh-pool
+328 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/ssh-pool
+329 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+330 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/pretty-hrtime
+331 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/pretty-hrtime
+332 info lifecycle pretty-hrtime@1.0.3~preuninstall: pretty-hrtime@1.0.3
+333 silly lifecycle pretty-hrtime@1.0.3~preuninstall: no script for preuninstall, continuing
+334 info lifecycle pretty-hrtime@1.0.3~uninstall: pretty-hrtime@1.0.3
+335 silly lifecycle pretty-hrtime@1.0.3~uninstall: no script for uninstall, continuing
+336 verbose unbuild rmStuff pretty-hrtime@1.0.3 from /usr/lib/node_modules
+337 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+338 info lifecycle pretty-hrtime@1.0.3~postuninstall: pretty-hrtime@1.0.3
+339 silly lifecycle pretty-hrtime@1.0.3~postuninstall: no script for postuninstall, continuing
+340 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/pretty-hrtime is being purged from base /usr
+341 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/pretty-hrtime
+342 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/pretty-hrtime
+343 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+344 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/orchestrator
+345 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/orchestrator
+346 info lifecycle orchestrator@0.3.8~preuninstall: orchestrator@0.3.8
+347 silly lifecycle orchestrator@0.3.8~preuninstall: no script for preuninstall, continuing
+348 info lifecycle orchestrator@0.3.8~uninstall: orchestrator@0.3.8
+349 silly lifecycle orchestrator@0.3.8~uninstall: no script for uninstall, continuing
+350 verbose unbuild rmStuff orchestrator@0.3.8 from /usr/lib/node_modules
+351 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+352 info lifecycle orchestrator@0.3.8~postuninstall: orchestrator@0.3.8
+353 silly lifecycle orchestrator@0.3.8~postuninstall: no script for postuninstall, continuing
+354 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/orchestrator is being purged from base /usr
+355 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/orchestrator
+356 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/orchestrator
+357 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+358 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/minimist
+359 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/minimist
+360 info lifecycle minimist@1.2.0~preuninstall: minimist@1.2.0
+361 silly lifecycle minimist@1.2.0~preuninstall: no script for preuninstall, continuing
+362 info lifecycle minimist@1.2.0~uninstall: minimist@1.2.0
+363 silly lifecycle minimist@1.2.0~uninstall: no script for uninstall, continuing
+364 verbose unbuild rmStuff minimist@1.2.0 from /usr/lib/node_modules
+365 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+366 info lifecycle minimist@1.2.0~postuninstall: minimist@1.2.0
+367 silly lifecycle minimist@1.2.0~postuninstall: no script for postuninstall, continuing
+368 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/minimist is being purged from base /usr
+369 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/minimist
+370 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/minimist
+371 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+372 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/lodash
+373 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/lodash
+374 info lifecycle lodash@4.17.4~preuninstall: lodash@4.17.4
+375 silly lifecycle lodash@4.17.4~preuninstall: no script for preuninstall, continuing
+376 info lifecycle lodash@4.17.4~uninstall: lodash@4.17.4
+377 silly lifecycle lodash@4.17.4~uninstall: no script for uninstall, continuing
+378 verbose unbuild rmStuff lodash@4.17.4 from /usr/lib/node_modules
+379 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+380 info lifecycle lodash@4.17.4~postuninstall: lodash@4.17.4
+381 silly lifecycle lodash@4.17.4~postuninstall: no script for postuninstall, continuing
+382 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/lodash is being purged from base /usr
+383 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/lodash
+384 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/lodash
+385 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+386 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/liftoff
+387 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/liftoff
+388 info lifecycle liftoff@2.3.0~preuninstall: liftoff@2.3.0
+389 silly lifecycle liftoff@2.3.0~preuninstall: no script for preuninstall, continuing
+390 info lifecycle liftoff@2.3.0~uninstall: liftoff@2.3.0
+391 silly lifecycle liftoff@2.3.0~uninstall: no script for uninstall, continuing
+392 verbose unbuild rmStuff liftoff@2.3.0 from /usr/lib/node_modules
+393 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+394 info lifecycle liftoff@2.3.0~postuninstall: liftoff@2.3.0
+395 silly lifecycle liftoff@2.3.0~postuninstall: no script for postuninstall, continuing
+396 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/liftoff is being purged from base /usr
+397 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/liftoff
+398 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/liftoff
+399 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+400 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/interpret
+401 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/interpret
+402 info lifecycle interpret@1.0.3~preuninstall: interpret@1.0.3
+403 silly lifecycle interpret@1.0.3~preuninstall: no script for preuninstall, continuing
+404 info lifecycle interpret@1.0.3~uninstall: interpret@1.0.3
+405 silly lifecycle interpret@1.0.3~uninstall: no script for uninstall, continuing
+406 verbose unbuild rmStuff interpret@1.0.3 from /usr/lib/node_modules
+407 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+408 info lifecycle interpret@1.0.3~postuninstall: interpret@1.0.3
+409 silly lifecycle interpret@1.0.3~postuninstall: no script for postuninstall, continuing
+410 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/interpret is being purged from base /usr
+411 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/interpret
+412 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/interpret
+413 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+414 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/chalk
+415 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/chalk
+416 info lifecycle chalk@1.1.3~preuninstall: chalk@1.1.3
+417 silly lifecycle chalk@1.1.3~preuninstall: no script for preuninstall, continuing
+418 info lifecycle chalk@1.1.3~uninstall: chalk@1.1.3
+419 silly lifecycle chalk@1.1.3~uninstall: no script for uninstall, continuing
+420 verbose unbuild rmStuff chalk@1.1.3 from /usr/lib/node_modules
+421 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+422 info lifecycle chalk@1.1.3~postuninstall: chalk@1.1.3
+423 silly lifecycle chalk@1.1.3~postuninstall: no script for postuninstall, continuing
+424 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/chalk is being purged from base /usr
+425 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/chalk
+426 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/chalk
+427 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+428 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/bluebird
+429 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/bluebird
+430 info lifecycle bluebird@3.5.0~preuninstall: bluebird@3.5.0
+431 silly lifecycle bluebird@3.5.0~preuninstall: no script for preuninstall, continuing
+432 info lifecycle bluebird@3.5.0~uninstall: bluebird@3.5.0
+433 silly lifecycle bluebird@3.5.0~uninstall: no script for uninstall, continuing
+434 verbose unbuild rmStuff bluebird@3.5.0 from /usr/lib/node_modules
+435 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+436 info lifecycle bluebird@3.5.0~postuninstall: bluebird@3.5.0
+437 silly lifecycle bluebird@3.5.0~postuninstall: no script for postuninstall, continuing
+438 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/bluebird is being purged from base /usr
+439 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/bluebird
+440 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/bluebird
+441 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+442 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/end-of-stream
+443 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/end-of-stream
+444 info lifecycle end-of-stream@0.1.5~preuninstall: end-of-stream@0.1.5
+445 silly lifecycle end-of-stream@0.1.5~preuninstall: no script for preuninstall, continuing
+446 info lifecycle end-of-stream@0.1.5~uninstall: end-of-stream@0.1.5
+447 silly lifecycle end-of-stream@0.1.5~uninstall: no script for uninstall, continuing
+448 verbose unbuild rmStuff end-of-stream@0.1.5 from /usr/lib/node_modules
+449 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+450 info lifecycle end-of-stream@0.1.5~postuninstall: end-of-stream@0.1.5
+451 silly lifecycle end-of-stream@0.1.5~postuninstall: no script for postuninstall, continuing
+452 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/end-of-stream is being purged from base /usr
+453 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/end-of-stream
+454 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/end-of-stream
+455 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+456 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/once
+457 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/once
+458 info lifecycle once@1.3.3~preuninstall: once@1.3.3
+459 silly lifecycle once@1.3.3~preuninstall: no script for preuninstall, continuing
+460 info lifecycle once@1.3.3~uninstall: once@1.3.3
+461 silly lifecycle once@1.3.3~uninstall: no script for uninstall, continuing
+462 verbose unbuild rmStuff once@1.3.3 from /usr/lib/node_modules
+463 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+464 info lifecycle once@1.3.3~postuninstall: once@1.3.3
+465 silly lifecycle once@1.3.3~postuninstall: no script for postuninstall, continuing
+466 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/once is being purged from base /usr
+467 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/once
+468 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/once
+469 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+470 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/wrappy
+471 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/wrappy
+472 info lifecycle wrappy@1.0.2~preuninstall: wrappy@1.0.2
+473 silly lifecycle wrappy@1.0.2~preuninstall: no script for preuninstall, continuing
+474 info lifecycle wrappy@1.0.2~uninstall: wrappy@1.0.2
+475 silly lifecycle wrappy@1.0.2~uninstall: no script for uninstall, continuing
+476 verbose unbuild rmStuff wrappy@1.0.2 from /usr/lib/node_modules
+477 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+478 info lifecycle wrappy@1.0.2~postuninstall: wrappy@1.0.2
+479 silly lifecycle wrappy@1.0.2~postuninstall: no script for postuninstall, continuing
+480 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/wrappy is being purged from base /usr
+481 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/wrappy
+482 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/wrappy
+483 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+484 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/findup-sync
+485 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/findup-sync
+486 info lifecycle findup-sync@0.4.3~preuninstall: findup-sync@0.4.3
+487 silly lifecycle findup-sync@0.4.3~preuninstall: no script for preuninstall, continuing
+488 info lifecycle findup-sync@0.4.3~uninstall: findup-sync@0.4.3
+489 silly lifecycle findup-sync@0.4.3~uninstall: no script for uninstall, continuing
+490 verbose unbuild rmStuff findup-sync@0.4.3 from /usr/lib/node_modules
+491 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+492 info lifecycle findup-sync@0.4.3~postuninstall: findup-sync@0.4.3
+493 silly lifecycle findup-sync@0.4.3~postuninstall: no script for postuninstall, continuing
+494 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/findup-sync is being purged from base /usr
+495 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/findup-sync
+496 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/findup-sync
+497 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+498 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/resolve-dir
+499 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/resolve-dir
+500 info lifecycle resolve-dir@0.1.1~preuninstall: resolve-dir@0.1.1
+501 silly lifecycle resolve-dir@0.1.1~preuninstall: no script for preuninstall, continuing
+502 info lifecycle resolve-dir@0.1.1~uninstall: resolve-dir@0.1.1
+503 silly lifecycle resolve-dir@0.1.1~uninstall: no script for uninstall, continuing
+504 verbose unbuild rmStuff resolve-dir@0.1.1 from /usr/lib/node_modules
+505 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+506 info lifecycle resolve-dir@0.1.1~postuninstall: resolve-dir@0.1.1
+507 silly lifecycle resolve-dir@0.1.1~postuninstall: no script for postuninstall, continuing
+508 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/resolve-dir is being purged from base /usr
+509 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/resolve-dir
+510 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/resolve-dir
+511 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+512 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/global-modules
+513 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/global-modules
+514 info lifecycle global-modules@0.2.3~preuninstall: global-modules@0.2.3
+515 silly lifecycle global-modules@0.2.3~preuninstall: no script for preuninstall, continuing
+516 info lifecycle global-modules@0.2.3~uninstall: global-modules@0.2.3
+517 silly lifecycle global-modules@0.2.3~uninstall: no script for uninstall, continuing
+518 verbose unbuild rmStuff global-modules@0.2.3 from /usr/lib/node_modules
+519 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+520 info lifecycle global-modules@0.2.3~postuninstall: global-modules@0.2.3
+521 silly lifecycle global-modules@0.2.3~postuninstall: no script for postuninstall, continuing
+522 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/global-modules is being purged from base /usr
+523 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/global-modules
+524 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/global-modules
+525 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+526 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/global-prefix
+527 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/global-prefix
+528 info lifecycle global-prefix@0.1.5~preuninstall: global-prefix@0.1.5
+529 silly lifecycle global-prefix@0.1.5~preuninstall: no script for preuninstall, continuing
+530 info lifecycle global-prefix@0.1.5~uninstall: global-prefix@0.1.5
+531 silly lifecycle global-prefix@0.1.5~uninstall: no script for uninstall, continuing
+532 verbose unbuild rmStuff global-prefix@0.1.5 from /usr/lib/node_modules
+533 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+534 info lifecycle global-prefix@0.1.5~postuninstall: global-prefix@0.1.5
+535 silly lifecycle global-prefix@0.1.5~postuninstall: no script for postuninstall, continuing
+536 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/global-prefix is being purged from base /usr
+537 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/global-prefix
+538 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/global-prefix
+539 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+540 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/which
+541 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/which
+542 info lifecycle which@1.2.14~preuninstall: which@1.2.14
+543 silly lifecycle which@1.2.14~preuninstall: no script for preuninstall, continuing
+544 info lifecycle which@1.2.14~uninstall: which@1.2.14
+545 silly lifecycle which@1.2.14~uninstall: no script for uninstall, continuing
+546 verbose unbuild rmStuff which@1.2.14 from /usr/lib/node_modules
+547 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+548 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/.bin/which is being gently removed from base /usr/lib/node_modules/shipit_cli_more/node_modules/which
+549 silly isEverInside /usr/lib/node_modules/shipit_cli_more/node_modules/.bin/which is not inside /usr/lib/node_modules/shipit_cli_more/node_modules/which
+550 silly gentlyRm parent.path = /usr/lib/node_modules/shipit_cli_more/node_modules/which
+551 silly gentlyRm parent.managed = /usr/lib/node_modules/shipit_cli_more/node_modules/which is in /usr
+552 silly gentlyRm target.path =  /usr/lib/node_modules/shipit_cli_more/node_modules/.bin/which
+553 silly gentlyRm target.symlink = ../which/bin/which
+554 silly gentlyRm target.managed = /usr/lib/node_modules/shipit_cli_more/node_modules/.bin/which is in /usr
+555 silly gentlyRm target.inParent =  { target: '/usr/lib/node_modules/shipit_cli_more/node_modules/which/bin/which',
+555 silly gentlyRm   path: '/usr/lib/node_modules/shipit_cli_more/node_modules/which' }
+556 verbose gentlyRm Vacuuming /usr/lib/node_modules/shipit_cli_more/node_modules/.bin/which up to /usr/lib/node_modules/shipit_cli_more/node_modules/.bin
+557 silly vacuum-fs removing /usr/lib/node_modules/shipit_cli_more/node_modules/.bin/which
+558 silly vacuum-fs finished vacuuming up to /usr/lib/node_modules/shipit_cli_more/node_modules/.bin
+559 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/.bin is being gently removed from base /usr/lib/node_modules/shipit_cli_more/node_modules
+560 silly gentlyRm parent.path = /usr/lib/node_modules/shipit_cli_more/node_modules
+561 silly gentlyRm parent.managed = /usr/lib/node_modules/shipit_cli_more/node_modules is in /usr
+562 silly gentlyRm target.path =  /usr/lib/node_modules/shipit_cli_more/node_modules/.bin
+563 silly gentlyRm target.symlink = null
+564 silly gentlyRm target.managed = /usr/lib/node_modules/shipit_cli_more/node_modules/.bin is in /usr
+565 silly gentlyRm target.inParent =  { target: '/usr/lib/node_modules/shipit_cli_more/node_modules/.bin',
+565 silly gentlyRm   path: '/usr/lib/node_modules/shipit_cli_more/node_modules' }
+566 verbose gentlyRm Vacuuming /usr/lib/node_modules/shipit_cli_more/node_modules/.bin up to /usr/lib/node_modules/shipit_cli_more/node_modules
+567 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules/.bin
+568 info lifecycle which@1.2.14~postuninstall: which@1.2.14
+569 silly lifecycle which@1.2.14~postuninstall: no script for postuninstall, continuing
+570 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/which is being purged from base /usr
+571 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/which
+572 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/which
+573 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+574 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/whereis
+575 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/whereis
+576 info lifecycle whereis@0.4.0~preuninstall: whereis@0.4.0
+577 silly lifecycle whereis@0.4.0~preuninstall: no script for preuninstall, continuing
+578 info lifecycle whereis@0.4.0~uninstall: whereis@0.4.0
+579 silly lifecycle whereis@0.4.0~uninstall: no script for uninstall, continuing
+580 verbose unbuild rmStuff whereis@0.4.0 from /usr/lib/node_modules
+581 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+582 info lifecycle whereis@0.4.0~postuninstall: whereis@0.4.0
+583 silly lifecycle whereis@0.4.0~postuninstall: no script for postuninstall, continuing
+584 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/whereis is being purged from base /usr
+585 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/whereis
+586 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/whereis
+587 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+588 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/user-home
+589 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/user-home
+590 info lifecycle user-home@1.1.1~preuninstall: user-home@1.1.1
+591 silly lifecycle user-home@1.1.1~preuninstall: no script for preuninstall, continuing
+592 info lifecycle user-home@1.1.1~uninstall: user-home@1.1.1
+593 silly lifecycle user-home@1.1.1~uninstall: no script for uninstall, continuing
+594 verbose unbuild rmStuff user-home@1.1.1 from /usr/lib/node_modules
+595 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+596 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/.bin/user-home is being gently removed from base /usr/lib/node_modules/shipit_cli_more/node_modules/user-home
+597 silly isEverInside /usr/lib/node_modules/shipit_cli_more/node_modules/.bin/user-home is not inside /usr/lib/node_modules/shipit_cli_more/node_modules/user-home
+598 silly gentlyRm parent.path = /usr/lib/node_modules/shipit_cli_more/node_modules/user-home
+599 silly gentlyRm parent.managed = /usr/lib/node_modules/shipit_cli_more/node_modules/user-home is in /usr
+600 silly gentlyRm target.path =  /usr/lib/node_modules/shipit_cli_more/node_modules/.bin/user-home
+601 silly gentlyRm target.symlink = ../user-home/cli.js
+602 silly gentlyRm target.managed = /usr/lib/node_modules/shipit_cli_more/node_modules/.bin/user-home is in /usr
+603 silly gentlyRm target.inParent =  { target: '/usr/lib/node_modules/shipit_cli_more/node_modules/user-home/cli.js',
+603 silly gentlyRm   path: '/usr/lib/node_modules/shipit_cli_more/node_modules/user-home' }
+604 verbose gentlyRm Vacuuming /usr/lib/node_modules/shipit_cli_more/node_modules/.bin/user-home up to /usr/lib/node_modules/shipit_cli_more/node_modules/.bin
+605 silly vacuum-fs removing /usr/lib/node_modules/shipit_cli_more/node_modules/.bin/user-home
+606 silly vacuum-fs finished vacuuming up to /usr/lib/node_modules/shipit_cli_more/node_modules/.bin
+607 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/.bin is being gently removed from base /usr/lib/node_modules/shipit_cli_more/node_modules
+608 silly gentlyRm parent.path = /usr/lib/node_modules/shipit_cli_more/node_modules
+609 silly gentlyRm parent.managed = /usr/lib/node_modules/shipit_cli_more/node_modules is in /usr
+610 silly gentlyRm target.path =  /usr/lib/node_modules/shipit_cli_more/node_modules/.bin
+611 silly gentlyRm target.symlink = null
+612 silly gentlyRm target.managed = /usr/lib/node_modules/shipit_cli_more/node_modules/.bin is in /usr
+613 silly gentlyRm target.inParent =  { target: '/usr/lib/node_modules/shipit_cli_more/node_modules/.bin',
+613 silly gentlyRm   path: '/usr/lib/node_modules/shipit_cli_more/node_modules' }
+614 verbose gentlyRm Vacuuming /usr/lib/node_modules/shipit_cli_more/node_modules/.bin up to /usr/lib/node_modules/shipit_cli_more/node_modules
+615 silly vacuum-fs removing /usr/lib/node_modules/shipit_cli_more/node_modules/.bin
+616 silly vacuum-fs finished vacuuming up to /usr/lib/node_modules/shipit_cli_more/node_modules
+617 info lifecycle user-home@1.1.1~postuninstall: user-home@1.1.1
+618 silly lifecycle user-home@1.1.1~postuninstall: no script for postuninstall, continuing
+619 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/user-home is being purged from base /usr
+620 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/user-home
+621 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/user-home
+622 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+623 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/fined
+624 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/fined
+625 info lifecycle fined@1.0.2~preuninstall: fined@1.0.2
+626 silly lifecycle fined@1.0.2~preuninstall: no script for preuninstall, continuing
+627 info lifecycle fined@1.0.2~uninstall: fined@1.0.2
+628 silly lifecycle fined@1.0.2~uninstall: no script for uninstall, continuing
+629 verbose unbuild rmStuff fined@1.0.2 from /usr/lib/node_modules
+630 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+631 info lifecycle fined@1.0.2~postuninstall: fined@1.0.2
+632 silly lifecycle fined@1.0.2~postuninstall: no script for postuninstall, continuing
+633 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/fined is being purged from base /usr
+634 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/fined
+635 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/fined
+636 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+637 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/parse-filepath
+638 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/parse-filepath
+639 info lifecycle parse-filepath@1.0.1~preuninstall: parse-filepath@1.0.1
+640 silly lifecycle parse-filepath@1.0.1~preuninstall: no script for preuninstall, continuing
+641 info lifecycle parse-filepath@1.0.1~uninstall: parse-filepath@1.0.1
+642 silly lifecycle parse-filepath@1.0.1~uninstall: no script for uninstall, continuing
+643 verbose unbuild rmStuff parse-filepath@1.0.1 from /usr/lib/node_modules
+644 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+645 info lifecycle parse-filepath@1.0.1~postuninstall: parse-filepath@1.0.1
+646 silly lifecycle parse-filepath@1.0.1~postuninstall: no script for postuninstall, continuing
+647 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/parse-filepath is being purged from base /usr
+648 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/parse-filepath
+649 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/parse-filepath
+650 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+651 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/is-absolute
+652 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/is-absolute
+653 info lifecycle is-absolute@0.2.6~preuninstall: is-absolute@0.2.6
+654 silly lifecycle is-absolute@0.2.6~preuninstall: no script for preuninstall, continuing
+655 info lifecycle is-absolute@0.2.6~uninstall: is-absolute@0.2.6
+656 silly lifecycle is-absolute@0.2.6~uninstall: no script for uninstall, continuing
+657 verbose unbuild rmStuff is-absolute@0.2.6 from /usr/lib/node_modules
+658 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+659 info lifecycle is-absolute@0.2.6~postuninstall: is-absolute@0.2.6
+660 silly lifecycle is-absolute@0.2.6~postuninstall: no script for postuninstall, continuing
+661 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/is-absolute is being purged from base /usr
+662 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/is-absolute
+663 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/is-absolute
+664 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+665 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/is-relative
+666 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/is-relative
+667 info lifecycle is-relative@0.2.1~preuninstall: is-relative@0.2.1
+668 silly lifecycle is-relative@0.2.1~preuninstall: no script for preuninstall, continuing
+669 info lifecycle is-relative@0.2.1~uninstall: is-relative@0.2.1
+670 silly lifecycle is-relative@0.2.1~uninstall: no script for uninstall, continuing
+671 verbose unbuild rmStuff is-relative@0.2.1 from /usr/lib/node_modules
+672 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+673 info lifecycle is-relative@0.2.1~postuninstall: is-relative@0.2.1
+674 silly lifecycle is-relative@0.2.1~postuninstall: no script for postuninstall, continuing
+675 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/is-relative is being purged from base /usr
+676 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/is-relative
+677 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/is-relative
+678 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+679 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/is-unc-path
+680 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/is-unc-path
+681 info lifecycle is-unc-path@0.1.2~preuninstall: is-unc-path@0.1.2
+682 silly lifecycle is-unc-path@0.1.2~preuninstall: no script for preuninstall, continuing
+683 info lifecycle is-unc-path@0.1.2~uninstall: is-unc-path@0.1.2
+684 silly lifecycle is-unc-path@0.1.2~uninstall: no script for uninstall, continuing
+685 verbose unbuild rmStuff is-unc-path@0.1.2 from /usr/lib/node_modules
+686 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+687 info lifecycle is-unc-path@0.1.2~postuninstall: is-unc-path@0.1.2
+688 silly lifecycle is-unc-path@0.1.2~postuninstall: no script for postuninstall, continuing
+689 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/is-unc-path is being purged from base /usr
+690 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/is-unc-path
+691 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/is-unc-path
+692 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+693 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/unc-path-regex
+694 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/unc-path-regex
+695 info lifecycle unc-path-regex@0.1.2~preuninstall: unc-path-regex@0.1.2
+696 silly lifecycle unc-path-regex@0.1.2~preuninstall: no script for preuninstall, continuing
+697 info lifecycle unc-path-regex@0.1.2~uninstall: unc-path-regex@0.1.2
+698 silly lifecycle unc-path-regex@0.1.2~uninstall: no script for uninstall, continuing
+699 verbose unbuild rmStuff unc-path-regex@0.1.2 from /usr/lib/node_modules
+700 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+701 info lifecycle unc-path-regex@0.1.2~postuninstall: unc-path-regex@0.1.2
+702 silly lifecycle unc-path-regex@0.1.2~postuninstall: no script for postuninstall, continuing
+703 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/unc-path-regex is being purged from base /usr
+704 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/unc-path-regex
+705 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/unc-path-regex
+706 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+707 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/supports-color
+708 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/supports-color
+709 info lifecycle supports-color@2.0.0~preuninstall: supports-color@2.0.0
+710 silly lifecycle supports-color@2.0.0~preuninstall: no script for preuninstall, continuing
+711 info lifecycle supports-color@2.0.0~uninstall: supports-color@2.0.0
+712 silly lifecycle supports-color@2.0.0~uninstall: no script for uninstall, continuing
+713 verbose unbuild rmStuff supports-color@2.0.0 from /usr/lib/node_modules
+714 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+715 info lifecycle supports-color@2.0.0~postuninstall: supports-color@2.0.0
+716 silly lifecycle supports-color@2.0.0~postuninstall: no script for postuninstall, continuing
+717 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/supports-color is being purged from base /usr
+718 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/supports-color
+719 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/supports-color
+720 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+721 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/strip-ansi
+722 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/strip-ansi
+723 info lifecycle strip-ansi@3.0.1~preuninstall: strip-ansi@3.0.1
+724 silly lifecycle strip-ansi@3.0.1~preuninstall: no script for preuninstall, continuing
+725 info lifecycle strip-ansi@3.0.1~uninstall: strip-ansi@3.0.1
+726 silly lifecycle strip-ansi@3.0.1~uninstall: no script for uninstall, continuing
+727 verbose unbuild rmStuff strip-ansi@3.0.1 from /usr/lib/node_modules
+728 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+729 info lifecycle strip-ansi@3.0.1~postuninstall: strip-ansi@3.0.1
+730 silly lifecycle strip-ansi@3.0.1~postuninstall: no script for postuninstall, continuing
+731 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/strip-ansi is being purged from base /usr
+732 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/strip-ansi
+733 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/strip-ansi
+734 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+735 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/stream-line-wrapper
+736 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/stream-line-wrapper
+737 info lifecycle stream-line-wrapper@0.1.1~preuninstall: stream-line-wrapper@0.1.1
+738 silly lifecycle stream-line-wrapper@0.1.1~preuninstall: no script for preuninstall, continuing
+739 info lifecycle stream-line-wrapper@0.1.1~uninstall: stream-line-wrapper@0.1.1
+740 silly lifecycle stream-line-wrapper@0.1.1~uninstall: no script for uninstall, continuing
+741 verbose unbuild rmStuff stream-line-wrapper@0.1.1 from /usr/lib/node_modules
+742 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+743 info lifecycle stream-line-wrapper@0.1.1~postuninstall: stream-line-wrapper@0.1.1
+744 silly lifecycle stream-line-wrapper@0.1.1~postuninstall: no script for postuninstall, continuing
+745 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/stream-line-wrapper is being purged from base /usr
+746 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/stream-line-wrapper
+747 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/stream-line-wrapper
+748 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+749 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/stream-consume
+750 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/stream-consume
+751 info lifecycle stream-consume@0.1.0~preuninstall: stream-consume@0.1.0
+752 silly lifecycle stream-consume@0.1.0~preuninstall: no script for preuninstall, continuing
+753 info lifecycle stream-consume@0.1.0~uninstall: stream-consume@0.1.0
+754 silly lifecycle stream-consume@0.1.0~uninstall: no script for uninstall, continuing
+755 verbose unbuild rmStuff stream-consume@0.1.0 from /usr/lib/node_modules
+756 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+757 info lifecycle stream-consume@0.1.0~postuninstall: stream-consume@0.1.0
+758 silly lifecycle stream-consume@0.1.0~postuninstall: no script for postuninstall, continuing
+759 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/stream-consume is being purged from base /usr
+760 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/stream-consume
+761 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/stream-consume
+762 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+763 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/ssh-pool/node_modules/lodash
+764 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/ssh-pool/node_modules/lodash
+765 info lifecycle lodash@3.10.1~preuninstall: lodash@3.10.1
+766 silly lifecycle lodash@3.10.1~preuninstall: no script for preuninstall, continuing
+767 info lifecycle lodash@3.10.1~uninstall: lodash@3.10.1
+768 silly lifecycle lodash@3.10.1~uninstall: no script for uninstall, continuing
+769 verbose unbuild rmStuff lodash@3.10.1 from /usr/lib/node_modules
+770 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules/ssh-pool/node_modules
+771 info lifecycle lodash@3.10.1~postuninstall: lodash@3.10.1
+772 silly lifecycle lodash@3.10.1~postuninstall: no script for postuninstall, continuing
+773 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/ssh-pool/node_modules/lodash is being purged from base /usr
+774 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/ssh-pool/node_modules/lodash
+775 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/ssh-pool/node_modules/lodash
+776 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules/ssh-pool/node_modules
+777 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/ssh-pool/node_modules/bluebird
+778 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/ssh-pool/node_modules/bluebird
+779 info lifecycle bluebird@2.11.0~preuninstall: bluebird@2.11.0
+780 silly lifecycle bluebird@2.11.0~preuninstall: no script for preuninstall, continuing
+781 info lifecycle bluebird@2.11.0~uninstall: bluebird@2.11.0
+782 silly lifecycle bluebird@2.11.0~uninstall: no script for uninstall, continuing
+783 verbose unbuild rmStuff bluebird@2.11.0 from /usr/lib/node_modules
+784 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules/ssh-pool/node_modules
+785 info lifecycle bluebird@2.11.0~postuninstall: bluebird@2.11.0
+786 silly lifecycle bluebird@2.11.0~postuninstall: no script for postuninstall, continuing
+787 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/ssh-pool/node_modules/bluebird is being purged from base /usr
+788 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/ssh-pool/node_modules/bluebird
+789 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/ssh-pool/node_modules/bluebird
+790 silly vacuum-fs removing /usr/lib/node_modules/shipit_cli_more/node_modules/ssh-pool/node_modules
+791 silly vacuum-fs removing /usr/lib/node_modules/shipit_cli_more/node_modules/ssh-pool
+792 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+793 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/sprintf-js
+794 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/sprintf-js
+795 info lifecycle sprintf-js@1.1.0~preuninstall: sprintf-js@1.1.0
+796 silly lifecycle sprintf-js@1.1.0~preuninstall: no script for preuninstall, continuing
+797 info lifecycle sprintf-js@1.1.0~uninstall: sprintf-js@1.1.0
+798 silly lifecycle sprintf-js@1.1.0~uninstall: no script for uninstall, continuing
+799 verbose unbuild rmStuff sprintf-js@1.1.0 from /usr/lib/node_modules
+800 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+801 info lifecycle sprintf-js@1.1.0~postuninstall: sprintf-js@1.1.0
+802 silly lifecycle sprintf-js@1.1.0~postuninstall: no script for postuninstall, continuing
+803 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/sprintf-js is being purged from base /usr
+804 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/sprintf-js
+805 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/sprintf-js
+806 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+807 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/sequencify
+808 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/sequencify
+809 info lifecycle sequencify@0.0.7~preuninstall: sequencify@0.0.7
+810 silly lifecycle sequencify@0.0.7~preuninstall: no script for preuninstall, continuing
+811 info lifecycle sequencify@0.0.7~uninstall: sequencify@0.0.7
+812 silly lifecycle sequencify@0.0.7~uninstall: no script for uninstall, continuing
+813 verbose unbuild rmStuff sequencify@0.0.7 from /usr/lib/node_modules
+814 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+815 info lifecycle sequencify@0.0.7~postuninstall: sequencify@0.0.7
+816 silly lifecycle sequencify@0.0.7~postuninstall: no script for postuninstall, continuing
+817 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/sequencify is being purged from base /usr
+818 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/sequencify
+819 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/sequencify
+820 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+821 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/rechoir
+822 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/rechoir
+823 info lifecycle rechoir@0.6.2~preuninstall: rechoir@0.6.2
+824 silly lifecycle rechoir@0.6.2~preuninstall: no script for preuninstall, continuing
+825 info lifecycle rechoir@0.6.2~uninstall: rechoir@0.6.2
+826 silly lifecycle rechoir@0.6.2~uninstall: no script for uninstall, continuing
+827 verbose unbuild rmStuff rechoir@0.6.2 from /usr/lib/node_modules
+828 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+829 info lifecycle rechoir@0.6.2~postuninstall: rechoir@0.6.2
+830 silly lifecycle rechoir@0.6.2~postuninstall: no script for postuninstall, continuing
+831 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/rechoir is being purged from base /usr
+832 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/rechoir
+833 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/rechoir
+834 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+835 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/resolve
+836 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/resolve
+837 info lifecycle resolve@1.3.3~preuninstall: resolve@1.3.3
+838 silly lifecycle resolve@1.3.3~preuninstall: no script for preuninstall, continuing
+839 info lifecycle resolve@1.3.3~uninstall: resolve@1.3.3
+840 silly lifecycle resolve@1.3.3~uninstall: no script for uninstall, continuing
+841 verbose unbuild rmStuff resolve@1.3.3 from /usr/lib/node_modules
+842 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+843 info lifecycle resolve@1.3.3~postuninstall: resolve@1.3.3
+844 silly lifecycle resolve@1.3.3~postuninstall: no script for postuninstall, continuing
+845 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/resolve is being purged from base /usr
+846 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/resolve
+847 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/resolve
+848 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+849 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/micromatch
+850 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/micromatch
+851 info lifecycle micromatch@2.3.11~preuninstall: micromatch@2.3.11
+852 silly lifecycle micromatch@2.3.11~preuninstall: no script for preuninstall, continuing
+853 info lifecycle micromatch@2.3.11~uninstall: micromatch@2.3.11
+854 silly lifecycle micromatch@2.3.11~uninstall: no script for uninstall, continuing
+855 verbose unbuild rmStuff micromatch@2.3.11 from /usr/lib/node_modules
+856 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+857 info lifecycle micromatch@2.3.11~postuninstall: micromatch@2.3.11
+858 silly lifecycle micromatch@2.3.11~postuninstall: no script for postuninstall, continuing
+859 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/micromatch is being purged from base /usr
+860 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/micromatch
+861 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/micromatch
+862 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+863 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/braces
+864 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/braces
+865 info lifecycle braces@1.8.5~preuninstall: braces@1.8.5
+866 silly lifecycle braces@1.8.5~preuninstall: no script for preuninstall, continuing
+867 info lifecycle braces@1.8.5~uninstall: braces@1.8.5
+868 silly lifecycle braces@1.8.5~uninstall: no script for uninstall, continuing
+869 verbose unbuild rmStuff braces@1.8.5 from /usr/lib/node_modules
+870 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+871 info lifecycle braces@1.8.5~postuninstall: braces@1.8.5
+872 silly lifecycle braces@1.8.5~postuninstall: no script for postuninstall, continuing
+873 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/braces is being purged from base /usr
+874 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/braces
+875 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/braces
+876 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+877 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/expand-range
+878 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/expand-range
+879 info lifecycle expand-range@1.8.2~preuninstall: expand-range@1.8.2
+880 silly lifecycle expand-range@1.8.2~preuninstall: no script for preuninstall, continuing
+881 info lifecycle expand-range@1.8.2~uninstall: expand-range@1.8.2
+882 silly lifecycle expand-range@1.8.2~uninstall: no script for uninstall, continuing
+883 verbose unbuild rmStuff expand-range@1.8.2 from /usr/lib/node_modules
+884 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+885 info lifecycle expand-range@1.8.2~postuninstall: expand-range@1.8.2
+886 silly lifecycle expand-range@1.8.2~postuninstall: no script for postuninstall, continuing
+887 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/expand-range is being purged from base /usr
+888 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/expand-range
+889 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/expand-range
+890 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+891 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/fill-range
+892 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/fill-range
+893 info lifecycle fill-range@2.2.3~preuninstall: fill-range@2.2.3
+894 silly lifecycle fill-range@2.2.3~preuninstall: no script for preuninstall, continuing
+895 info lifecycle fill-range@2.2.3~uninstall: fill-range@2.2.3
+896 silly lifecycle fill-range@2.2.3~uninstall: no script for uninstall, continuing
+897 verbose unbuild rmStuff fill-range@2.2.3 from /usr/lib/node_modules
+898 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+899 info lifecycle fill-range@2.2.3~postuninstall: fill-range@2.2.3
+900 silly lifecycle fill-range@2.2.3~postuninstall: no script for postuninstall, continuing
+901 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/fill-range is being purged from base /usr
+902 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/fill-range
+903 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/fill-range
+904 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+905 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/repeat-string
+906 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/repeat-string
+907 info lifecycle repeat-string@1.6.1~preuninstall: repeat-string@1.6.1
+908 silly lifecycle repeat-string@1.6.1~preuninstall: no script for preuninstall, continuing
+909 info lifecycle repeat-string@1.6.1~uninstall: repeat-string@1.6.1
+910 silly lifecycle repeat-string@1.6.1~uninstall: no script for uninstall, continuing
+911 verbose unbuild rmStuff repeat-string@1.6.1 from /usr/lib/node_modules
+912 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+913 info lifecycle repeat-string@1.6.1~postuninstall: repeat-string@1.6.1
+914 silly lifecycle repeat-string@1.6.1~postuninstall: no script for postuninstall, continuing
+915 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/repeat-string is being purged from base /usr
+916 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/repeat-string
+917 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/repeat-string
+918 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+919 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/repeat-element
+920 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/repeat-element
+921 info lifecycle repeat-element@1.1.2~preuninstall: repeat-element@1.1.2
+922 silly lifecycle repeat-element@1.1.2~preuninstall: no script for preuninstall, continuing
+923 info lifecycle repeat-element@1.1.2~uninstall: repeat-element@1.1.2
+924 silly lifecycle repeat-element@1.1.2~uninstall: no script for uninstall, continuing
+925 verbose unbuild rmStuff repeat-element@1.1.2 from /usr/lib/node_modules
+926 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+927 info lifecycle repeat-element@1.1.2~postuninstall: repeat-element@1.1.2
+928 silly lifecycle repeat-element@1.1.2~postuninstall: no script for postuninstall, continuing
+929 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/repeat-element is being purged from base /usr
+930 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/repeat-element
+931 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/repeat-element
+932 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+933 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/normalize-path
+934 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/normalize-path
+935 info lifecycle normalize-path@2.1.1~preuninstall: normalize-path@2.1.1
+936 silly lifecycle normalize-path@2.1.1~preuninstall: no script for preuninstall, continuing
+937 info lifecycle normalize-path@2.1.1~uninstall: normalize-path@2.1.1
+938 silly lifecycle normalize-path@2.1.1~uninstall: no script for uninstall, continuing
+939 verbose unbuild rmStuff normalize-path@2.1.1 from /usr/lib/node_modules
+940 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+941 info lifecycle normalize-path@2.1.1~postuninstall: normalize-path@2.1.1
+942 silly lifecycle normalize-path@2.1.1~postuninstall: no script for postuninstall, continuing
+943 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/normalize-path is being purged from base /usr
+944 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/normalize-path
+945 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/normalize-path
+946 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+947 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/remove-trailing-separator
+948 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/remove-trailing-separator
+949 info lifecycle remove-trailing-separator@1.0.1~preuninstall: remove-trailing-separator@1.0.1
+950 silly lifecycle remove-trailing-separator@1.0.1~preuninstall: no script for preuninstall, continuing
+951 info lifecycle remove-trailing-separator@1.0.1~uninstall: remove-trailing-separator@1.0.1
+952 silly lifecycle remove-trailing-separator@1.0.1~uninstall: no script for uninstall, continuing
+953 verbose unbuild rmStuff remove-trailing-separator@1.0.1 from /usr/lib/node_modules
+954 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+955 info lifecycle remove-trailing-separator@1.0.1~postuninstall: remove-trailing-separator@1.0.1
+956 silly lifecycle remove-trailing-separator@1.0.1~postuninstall: no script for postuninstall, continuing
+957 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/remove-trailing-separator is being purged from base /usr
+958 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/remove-trailing-separator
+959 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/remove-trailing-separator
+960 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+961 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/regex-cache
+962 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/regex-cache
+963 info lifecycle regex-cache@0.4.3~preuninstall: regex-cache@0.4.3
+964 silly lifecycle regex-cache@0.4.3~preuninstall: no script for preuninstall, continuing
+965 info lifecycle regex-cache@0.4.3~uninstall: regex-cache@0.4.3
+966 silly lifecycle regex-cache@0.4.3~uninstall: no script for uninstall, continuing
+967 verbose unbuild rmStuff regex-cache@0.4.3 from /usr/lib/node_modules
+968 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+969 info lifecycle regex-cache@0.4.3~postuninstall: regex-cache@0.4.3
+970 silly lifecycle regex-cache@0.4.3~postuninstall: no script for postuninstall, continuing
+971 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/regex-cache is being purged from base /usr
+972 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/regex-cache
+973 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/regex-cache
+974 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+975 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/randomatic
+976 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/randomatic
+977 info lifecycle randomatic@1.1.6~preuninstall: randomatic@1.1.6
+978 silly lifecycle randomatic@1.1.6~preuninstall: no script for preuninstall, continuing
+979 info lifecycle randomatic@1.1.6~uninstall: randomatic@1.1.6
+980 silly lifecycle randomatic@1.1.6~uninstall: no script for uninstall, continuing
+981 verbose unbuild rmStuff randomatic@1.1.6 from /usr/lib/node_modules
+982 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+983 info lifecycle randomatic@1.1.6~postuninstall: randomatic@1.1.6
+984 silly lifecycle randomatic@1.1.6~postuninstall: no script for postuninstall, continuing
+985 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/randomatic is being purged from base /usr
+986 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/randomatic
+987 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/randomatic
+988 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+989 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/preserve
+990 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/preserve
+991 info lifecycle preserve@0.2.0~preuninstall: preserve@0.2.0
+992 silly lifecycle preserve@0.2.0~preuninstall: no script for preuninstall, continuing
+993 info lifecycle preserve@0.2.0~uninstall: preserve@0.2.0
+994 silly lifecycle preserve@0.2.0~uninstall: no script for uninstall, continuing
+995 verbose unbuild rmStuff preserve@0.2.0 from /usr/lib/node_modules
+996 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+997 info lifecycle preserve@0.2.0~postuninstall: preserve@0.2.0
+998 silly lifecycle preserve@0.2.0~postuninstall: no script for postuninstall, continuing
+999 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/preserve is being purged from base /usr
+1000 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/preserve
+1001 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/preserve
+1002 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1003 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/path-root
+1004 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/path-root
+1005 info lifecycle path-root@0.1.1~preuninstall: path-root@0.1.1
+1006 silly lifecycle path-root@0.1.1~preuninstall: no script for preuninstall, continuing
+1007 info lifecycle path-root@0.1.1~uninstall: path-root@0.1.1
+1008 silly lifecycle path-root@0.1.1~uninstall: no script for uninstall, continuing
+1009 verbose unbuild rmStuff path-root@0.1.1 from /usr/lib/node_modules
+1010 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1011 info lifecycle path-root@0.1.1~postuninstall: path-root@0.1.1
+1012 silly lifecycle path-root@0.1.1~postuninstall: no script for postuninstall, continuing
+1013 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/path-root is being purged from base /usr
+1014 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/path-root
+1015 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/path-root
+1016 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1017 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/path-root-regex
+1018 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/path-root-regex
+1019 info lifecycle path-root-regex@0.1.2~preuninstall: path-root-regex@0.1.2
+1020 silly lifecycle path-root-regex@0.1.2~preuninstall: no script for preuninstall, continuing
+1021 info lifecycle path-root-regex@0.1.2~uninstall: path-root-regex@0.1.2
+1022 silly lifecycle path-root-regex@0.1.2~uninstall: no script for uninstall, continuing
+1023 verbose unbuild rmStuff path-root-regex@0.1.2 from /usr/lib/node_modules
+1024 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1025 info lifecycle path-root-regex@0.1.2~postuninstall: path-root-regex@0.1.2
+1026 silly lifecycle path-root-regex@0.1.2~postuninstall: no script for postuninstall, continuing
+1027 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/path-root-regex is being purged from base /usr
+1028 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/path-root-regex
+1029 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/path-root-regex
+1030 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1031 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/path-parse
+1032 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/path-parse
+1033 info lifecycle path-parse@1.0.5~preuninstall: path-parse@1.0.5
+1034 silly lifecycle path-parse@1.0.5~preuninstall: no script for preuninstall, continuing
+1035 info lifecycle path-parse@1.0.5~uninstall: path-parse@1.0.5
+1036 silly lifecycle path-parse@1.0.5~uninstall: no script for uninstall, continuing
+1037 verbose unbuild rmStuff path-parse@1.0.5 from /usr/lib/node_modules
+1038 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1039 info lifecycle path-parse@1.0.5~postuninstall: path-parse@1.0.5
+1040 silly lifecycle path-parse@1.0.5~postuninstall: no script for postuninstall, continuing
+1041 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/path-parse is being purged from base /usr
+1042 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/path-parse
+1043 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/path-parse
+1044 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1045 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/homedir-polyfill
+1046 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/homedir-polyfill
+1047 info lifecycle homedir-polyfill@1.0.1~preuninstall: homedir-polyfill@1.0.1
+1048 silly lifecycle homedir-polyfill@1.0.1~preuninstall: no script for preuninstall, continuing
+1049 info lifecycle homedir-polyfill@1.0.1~uninstall: homedir-polyfill@1.0.1
+1050 silly lifecycle homedir-polyfill@1.0.1~uninstall: no script for uninstall, continuing
+1051 verbose unbuild rmStuff homedir-polyfill@1.0.1 from /usr/lib/node_modules
+1052 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1053 info lifecycle homedir-polyfill@1.0.1~postuninstall: homedir-polyfill@1.0.1
+1054 silly lifecycle homedir-polyfill@1.0.1~postuninstall: no script for postuninstall, continuing
+1055 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/homedir-polyfill is being purged from base /usr
+1056 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/homedir-polyfill
+1057 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/homedir-polyfill
+1058 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1059 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/parse-passwd
+1060 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/parse-passwd
+1061 info lifecycle parse-passwd@1.0.0~preuninstall: parse-passwd@1.0.0
+1062 silly lifecycle parse-passwd@1.0.0~preuninstall: no script for preuninstall, continuing
+1063 info lifecycle parse-passwd@1.0.0~uninstall: parse-passwd@1.0.0
+1064 silly lifecycle parse-passwd@1.0.0~uninstall: no script for uninstall, continuing
+1065 verbose unbuild rmStuff parse-passwd@1.0.0 from /usr/lib/node_modules
+1066 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1067 info lifecycle parse-passwd@1.0.0~postuninstall: parse-passwd@1.0.0
+1068 silly lifecycle parse-passwd@1.0.0~postuninstall: no script for postuninstall, continuing
+1069 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/parse-passwd is being purged from base /usr
+1070 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/parse-passwd
+1071 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/parse-passwd
+1072 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1073 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/parse-glob
+1074 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/parse-glob
+1075 info lifecycle parse-glob@3.0.4~preuninstall: parse-glob@3.0.4
+1076 silly lifecycle parse-glob@3.0.4~preuninstall: no script for preuninstall, continuing
+1077 info lifecycle parse-glob@3.0.4~uninstall: parse-glob@3.0.4
+1078 silly lifecycle parse-glob@3.0.4~uninstall: no script for uninstall, continuing
+1079 verbose unbuild rmStuff parse-glob@3.0.4 from /usr/lib/node_modules
+1080 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1081 info lifecycle parse-glob@3.0.4~postuninstall: parse-glob@3.0.4
+1082 silly lifecycle parse-glob@3.0.4~postuninstall: no script for postuninstall, continuing
+1083 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/parse-glob is being purged from base /usr
+1084 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/parse-glob
+1085 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/parse-glob
+1086 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1087 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/expand-tilde
+1088 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/expand-tilde
+1089 info lifecycle expand-tilde@1.2.2~preuninstall: expand-tilde@1.2.2
+1090 silly lifecycle expand-tilde@1.2.2~preuninstall: no script for preuninstall, continuing
+1091 info lifecycle expand-tilde@1.2.2~uninstall: expand-tilde@1.2.2
+1092 silly lifecycle expand-tilde@1.2.2~uninstall: no script for uninstall, continuing
+1093 verbose unbuild rmStuff expand-tilde@1.2.2 from /usr/lib/node_modules
+1094 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1095 info lifecycle expand-tilde@1.2.2~postuninstall: expand-tilde@1.2.2
+1096 silly lifecycle expand-tilde@1.2.2~postuninstall: no script for postuninstall, continuing
+1097 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/expand-tilde is being purged from base /usr
+1098 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/expand-tilde
+1099 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/expand-tilde
+1100 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1101 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/os-homedir
+1102 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/os-homedir
+1103 info lifecycle os-homedir@1.0.2~preuninstall: os-homedir@1.0.2
+1104 silly lifecycle os-homedir@1.0.2~preuninstall: no script for preuninstall, continuing
+1105 info lifecycle os-homedir@1.0.2~uninstall: os-homedir@1.0.2
+1106 silly lifecycle os-homedir@1.0.2~uninstall: no script for uninstall, continuing
+1107 verbose unbuild rmStuff os-homedir@1.0.2 from /usr/lib/node_modules
+1108 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1109 info lifecycle os-homedir@1.0.2~postuninstall: os-homedir@1.0.2
+1110 silly lifecycle os-homedir@1.0.2~postuninstall: no script for postuninstall, continuing
+1111 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/os-homedir is being purged from base /usr
+1112 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/os-homedir
+1113 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/os-homedir
+1114 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1115 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/object.omit
+1116 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/object.omit
+1117 info lifecycle object.omit@2.0.1~preuninstall: object.omit@2.0.1
+1118 silly lifecycle object.omit@2.0.1~preuninstall: no script for preuninstall, continuing
+1119 info lifecycle object.omit@2.0.1~uninstall: object.omit@2.0.1
+1120 silly lifecycle object.omit@2.0.1~uninstall: no script for uninstall, continuing
+1121 verbose unbuild rmStuff object.omit@2.0.1 from /usr/lib/node_modules
+1122 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1123 info lifecycle object.omit@2.0.1~postuninstall: object.omit@2.0.1
+1124 silly lifecycle object.omit@2.0.1~postuninstall: no script for postuninstall, continuing
+1125 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/object.omit is being purged from base /usr
+1126 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/object.omit
+1127 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/object.omit
+1128 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1129 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/map-cache
+1130 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/map-cache
+1131 info lifecycle map-cache@0.2.2~preuninstall: map-cache@0.2.2
+1132 silly lifecycle map-cache@0.2.2~preuninstall: no script for preuninstall, continuing
+1133 info lifecycle map-cache@0.2.2~uninstall: map-cache@0.2.2
+1134 silly lifecycle map-cache@0.2.2~uninstall: no script for uninstall, continuing
+1135 verbose unbuild rmStuff map-cache@0.2.2 from /usr/lib/node_modules
+1136 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1137 info lifecycle map-cache@0.2.2~postuninstall: map-cache@0.2.2
+1138 silly lifecycle map-cache@0.2.2~postuninstall: no script for postuninstall, continuing
+1139 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/map-cache is being purged from base /usr
+1140 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/map-cache
+1141 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/map-cache
+1142 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1143 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/lodash.pick
+1144 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/lodash.pick
+1145 info lifecycle lodash.pick@4.4.0~preuninstall: lodash.pick@4.4.0
+1146 silly lifecycle lodash.pick@4.4.0~preuninstall: no script for preuninstall, continuing
+1147 info lifecycle lodash.pick@4.4.0~uninstall: lodash.pick@4.4.0
+1148 silly lifecycle lodash.pick@4.4.0~uninstall: no script for uninstall, continuing
+1149 verbose unbuild rmStuff lodash.pick@4.4.0 from /usr/lib/node_modules
+1150 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1151 info lifecycle lodash.pick@4.4.0~postuninstall: lodash.pick@4.4.0
+1152 silly lifecycle lodash.pick@4.4.0~postuninstall: no script for postuninstall, continuing
+1153 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/lodash.pick is being purged from base /usr
+1154 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/lodash.pick
+1155 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/lodash.pick
+1156 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1157 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/lodash.mapvalues
+1158 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/lodash.mapvalues
+1159 info lifecycle lodash.mapvalues@4.6.0~preuninstall: lodash.mapvalues@4.6.0
+1160 silly lifecycle lodash.mapvalues@4.6.0~preuninstall: no script for preuninstall, continuing
+1161 info lifecycle lodash.mapvalues@4.6.0~uninstall: lodash.mapvalues@4.6.0
+1162 silly lifecycle lodash.mapvalues@4.6.0~uninstall: no script for uninstall, continuing
+1163 verbose unbuild rmStuff lodash.mapvalues@4.6.0 from /usr/lib/node_modules
+1164 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1165 info lifecycle lodash.mapvalues@4.6.0~postuninstall: lodash.mapvalues@4.6.0
+1166 silly lifecycle lodash.mapvalues@4.6.0~postuninstall: no script for postuninstall, continuing
+1167 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/lodash.mapvalues is being purged from base /usr
+1168 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/lodash.mapvalues
+1169 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/lodash.mapvalues
+1170 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1171 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/lodash.isstring
+1172 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/lodash.isstring
+1173 info lifecycle lodash.isstring@4.0.1~preuninstall: lodash.isstring@4.0.1
+1174 silly lifecycle lodash.isstring@4.0.1~preuninstall: no script for preuninstall, continuing
+1175 info lifecycle lodash.isstring@4.0.1~uninstall: lodash.isstring@4.0.1
+1176 silly lifecycle lodash.isstring@4.0.1~uninstall: no script for uninstall, continuing
+1177 verbose unbuild rmStuff lodash.isstring@4.0.1 from /usr/lib/node_modules
+1178 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1179 info lifecycle lodash.isstring@4.0.1~postuninstall: lodash.isstring@4.0.1
+1180 silly lifecycle lodash.isstring@4.0.1~postuninstall: no script for postuninstall, continuing
+1181 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/lodash.isstring is being purged from base /usr
+1182 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/lodash.isstring
+1183 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/lodash.isstring
+1184 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1185 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/lodash.isplainobject
+1186 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/lodash.isplainobject
+1187 info lifecycle lodash.isplainobject@4.0.6~preuninstall: lodash.isplainobject@4.0.6
+1188 silly lifecycle lodash.isplainobject@4.0.6~preuninstall: no script for preuninstall, continuing
+1189 info lifecycle lodash.isplainobject@4.0.6~uninstall: lodash.isplainobject@4.0.6
+1190 silly lifecycle lodash.isplainobject@4.0.6~uninstall: no script for uninstall, continuing
+1191 verbose unbuild rmStuff lodash.isplainobject@4.0.6 from /usr/lib/node_modules
+1192 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1193 info lifecycle lodash.isplainobject@4.0.6~postuninstall: lodash.isplainobject@4.0.6
+1194 silly lifecycle lodash.isplainobject@4.0.6~postuninstall: no script for postuninstall, continuing
+1195 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/lodash.isplainobject is being purged from base /usr
+1196 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/lodash.isplainobject
+1197 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/lodash.isplainobject
+1198 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1199 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/lodash.isempty
+1200 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/lodash.isempty
+1201 info lifecycle lodash.isempty@4.4.0~preuninstall: lodash.isempty@4.4.0
+1202 silly lifecycle lodash.isempty@4.4.0~preuninstall: no script for preuninstall, continuing
+1203 info lifecycle lodash.isempty@4.4.0~uninstall: lodash.isempty@4.4.0
+1204 silly lifecycle lodash.isempty@4.4.0~uninstall: no script for uninstall, continuing
+1205 verbose unbuild rmStuff lodash.isempty@4.4.0 from /usr/lib/node_modules
+1206 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1207 info lifecycle lodash.isempty@4.4.0~postuninstall: lodash.isempty@4.4.0
+1208 silly lifecycle lodash.isempty@4.4.0~postuninstall: no script for postuninstall, continuing
+1209 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/lodash.isempty is being purged from base /usr
+1210 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/lodash.isempty
+1211 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/lodash.isempty
+1212 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1213 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/lodash.assignwith
+1214 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/lodash.assignwith
+1215 info lifecycle lodash.assignwith@4.2.0~preuninstall: lodash.assignwith@4.2.0
+1216 silly lifecycle lodash.assignwith@4.2.0~preuninstall: no script for preuninstall, continuing
+1217 info lifecycle lodash.assignwith@4.2.0~uninstall: lodash.assignwith@4.2.0
+1218 silly lifecycle lodash.assignwith@4.2.0~uninstall: no script for uninstall, continuing
+1219 verbose unbuild rmStuff lodash.assignwith@4.2.0 from /usr/lib/node_modules
+1220 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1221 info lifecycle lodash.assignwith@4.2.0~postuninstall: lodash.assignwith@4.2.0
+1222 silly lifecycle lodash.assignwith@4.2.0~postuninstall: no script for postuninstall, continuing
+1223 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/lodash.assignwith is being purged from base /usr
+1224 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/lodash.assignwith
+1225 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/lodash.assignwith
+1226 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1227 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/is-number
+1228 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/is-number
+1229 info lifecycle is-number@2.1.0~preuninstall: is-number@2.1.0
+1230 silly lifecycle is-number@2.1.0~preuninstall: no script for preuninstall, continuing
+1231 info lifecycle is-number@2.1.0~uninstall: is-number@2.1.0
+1232 silly lifecycle is-number@2.1.0~uninstall: no script for uninstall, continuing
+1233 verbose unbuild rmStuff is-number@2.1.0 from /usr/lib/node_modules
+1234 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1235 info lifecycle is-number@2.1.0~postuninstall: is-number@2.1.0
+1236 silly lifecycle is-number@2.1.0~postuninstall: no script for postuninstall, continuing
+1237 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/is-number is being purged from base /usr
+1238 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/is-number
+1239 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/is-number
+1240 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1241 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/kind-of
+1242 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/kind-of
+1243 info lifecycle kind-of@3.2.2~preuninstall: kind-of@3.2.2
+1244 silly lifecycle kind-of@3.2.2~preuninstall: no script for preuninstall, continuing
+1245 info lifecycle kind-of@3.2.2~uninstall: kind-of@3.2.2
+1246 silly lifecycle kind-of@3.2.2~uninstall: no script for uninstall, continuing
+1247 verbose unbuild rmStuff kind-of@3.2.2 from /usr/lib/node_modules
+1248 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1249 info lifecycle kind-of@3.2.2~postuninstall: kind-of@3.2.2
+1250 silly lifecycle kind-of@3.2.2~postuninstall: no script for postuninstall, continuing
+1251 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/kind-of is being purged from base /usr
+1252 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/kind-of
+1253 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/kind-of
+1254 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1255 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/isobject
+1256 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/isobject
+1257 info lifecycle isobject@2.1.0~preuninstall: isobject@2.1.0
+1258 silly lifecycle isobject@2.1.0~preuninstall: no script for preuninstall, continuing
+1259 info lifecycle isobject@2.1.0~uninstall: isobject@2.1.0
+1260 silly lifecycle isobject@2.1.0~uninstall: no script for uninstall, continuing
+1261 verbose unbuild rmStuff isobject@2.1.0 from /usr/lib/node_modules
+1262 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1263 info lifecycle isobject@2.1.0~postuninstall: isobject@2.1.0
+1264 silly lifecycle isobject@2.1.0~postuninstall: no script for postuninstall, continuing
+1265 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/isobject is being purged from base /usr
+1266 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/isobject
+1267 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/isobject
+1268 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1269 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/isexe
+1270 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/isexe
+1271 info lifecycle isexe@2.0.0~preuninstall: isexe@2.0.0
+1272 silly lifecycle isexe@2.0.0~preuninstall: no script for preuninstall, continuing
+1273 info lifecycle isexe@2.0.0~uninstall: isexe@2.0.0
+1274 silly lifecycle isexe@2.0.0~uninstall: no script for uninstall, continuing
+1275 verbose unbuild rmStuff isexe@2.0.0 from /usr/lib/node_modules
+1276 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1277 info lifecycle isexe@2.0.0~postuninstall: isexe@2.0.0
+1278 silly lifecycle isexe@2.0.0~postuninstall: no script for postuninstall, continuing
+1279 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/isexe is being purged from base /usr
+1280 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/isexe
+1281 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/isexe
+1282 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1283 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/isarray
+1284 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/isarray
+1285 info lifecycle isarray@1.0.0~preuninstall: isarray@1.0.0
+1286 silly lifecycle isarray@1.0.0~preuninstall: no script for preuninstall, continuing
+1287 info lifecycle isarray@1.0.0~uninstall: isarray@1.0.0
+1288 silly lifecycle isarray@1.0.0~uninstall: no script for uninstall, continuing
+1289 verbose unbuild rmStuff isarray@1.0.0 from /usr/lib/node_modules
+1290 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1291 info lifecycle isarray@1.0.0~postuninstall: isarray@1.0.0
+1292 silly lifecycle isarray@1.0.0~postuninstall: no script for postuninstall, continuing
+1293 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/isarray is being purged from base /usr
+1294 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/isarray
+1295 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/isarray
+1296 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1297 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/is-windows
+1298 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/is-windows
+1299 info lifecycle is-windows@0.2.0~preuninstall: is-windows@0.2.0
+1300 silly lifecycle is-windows@0.2.0~preuninstall: no script for preuninstall, continuing
+1301 info lifecycle is-windows@0.2.0~uninstall: is-windows@0.2.0
+1302 silly lifecycle is-windows@0.2.0~uninstall: no script for uninstall, continuing
+1303 verbose unbuild rmStuff is-windows@0.2.0 from /usr/lib/node_modules
+1304 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1305 info lifecycle is-windows@0.2.0~postuninstall: is-windows@0.2.0
+1306 silly lifecycle is-windows@0.2.0~postuninstall: no script for postuninstall, continuing
+1307 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/is-windows is being purged from base /usr
+1308 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/is-windows
+1309 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/is-windows
+1310 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1311 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/is-equal-shallow
+1312 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/is-equal-shallow
+1313 info lifecycle is-equal-shallow@0.1.3~preuninstall: is-equal-shallow@0.1.3
+1314 silly lifecycle is-equal-shallow@0.1.3~preuninstall: no script for preuninstall, continuing
+1315 info lifecycle is-equal-shallow@0.1.3~uninstall: is-equal-shallow@0.1.3
+1316 silly lifecycle is-equal-shallow@0.1.3~uninstall: no script for uninstall, continuing
+1317 verbose unbuild rmStuff is-equal-shallow@0.1.3 from /usr/lib/node_modules
+1318 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1319 info lifecycle is-equal-shallow@0.1.3~postuninstall: is-equal-shallow@0.1.3
+1320 silly lifecycle is-equal-shallow@0.1.3~postuninstall: no script for postuninstall, continuing
+1321 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/is-equal-shallow is being purged from base /usr
+1322 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/is-equal-shallow
+1323 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/is-equal-shallow
+1324 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1325 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/is-primitive
+1326 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/is-primitive
+1327 info lifecycle is-primitive@2.0.0~preuninstall: is-primitive@2.0.0
+1328 silly lifecycle is-primitive@2.0.0~preuninstall: no script for preuninstall, continuing
+1329 info lifecycle is-primitive@2.0.0~uninstall: is-primitive@2.0.0
+1330 silly lifecycle is-primitive@2.0.0~uninstall: no script for uninstall, continuing
+1331 verbose unbuild rmStuff is-primitive@2.0.0 from /usr/lib/node_modules
+1332 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1333 info lifecycle is-primitive@2.0.0~postuninstall: is-primitive@2.0.0
+1334 silly lifecycle is-primitive@2.0.0~postuninstall: no script for postuninstall, continuing
+1335 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/is-primitive is being purged from base /usr
+1336 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/is-primitive
+1337 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/is-primitive
+1338 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1339 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/expand-brackets
+1340 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/expand-brackets
+1341 info lifecycle expand-brackets@0.1.5~preuninstall: expand-brackets@0.1.5
+1342 silly lifecycle expand-brackets@0.1.5~preuninstall: no script for preuninstall, continuing
+1343 info lifecycle expand-brackets@0.1.5~uninstall: expand-brackets@0.1.5
+1344 silly lifecycle expand-brackets@0.1.5~uninstall: no script for uninstall, continuing
+1345 verbose unbuild rmStuff expand-brackets@0.1.5 from /usr/lib/node_modules
+1346 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1347 info lifecycle expand-brackets@0.1.5~postuninstall: expand-brackets@0.1.5
+1348 silly lifecycle expand-brackets@0.1.5~postuninstall: no script for postuninstall, continuing
+1349 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/expand-brackets is being purged from base /usr
+1350 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/expand-brackets
+1351 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/expand-brackets
+1352 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1353 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/is-posix-bracket
+1354 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/is-posix-bracket
+1355 info lifecycle is-posix-bracket@0.1.1~preuninstall: is-posix-bracket@0.1.1
+1356 silly lifecycle is-posix-bracket@0.1.1~preuninstall: no script for preuninstall, continuing
+1357 info lifecycle is-posix-bracket@0.1.1~uninstall: is-posix-bracket@0.1.1
+1358 silly lifecycle is-posix-bracket@0.1.1~uninstall: no script for uninstall, continuing
+1359 verbose unbuild rmStuff is-posix-bracket@0.1.1 from /usr/lib/node_modules
+1360 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1361 info lifecycle is-posix-bracket@0.1.1~postuninstall: is-posix-bracket@0.1.1
+1362 silly lifecycle is-posix-bracket@0.1.1~postuninstall: no script for postuninstall, continuing
+1363 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/is-posix-bracket is being purged from base /usr
+1364 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/is-posix-bracket
+1365 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/is-posix-bracket
+1366 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1367 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/glob-base
+1368 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/glob-base
+1369 info lifecycle glob-base@0.3.0~preuninstall: glob-base@0.3.0
+1370 silly lifecycle glob-base@0.3.0~preuninstall: no script for preuninstall, continuing
+1371 info lifecycle glob-base@0.3.0~uninstall: glob-base@0.3.0
+1372 silly lifecycle glob-base@0.3.0~uninstall: no script for uninstall, continuing
+1373 verbose unbuild rmStuff glob-base@0.3.0 from /usr/lib/node_modules
+1374 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1375 info lifecycle glob-base@0.3.0~postuninstall: glob-base@0.3.0
+1376 silly lifecycle glob-base@0.3.0~postuninstall: no script for postuninstall, continuing
+1377 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/glob-base is being purged from base /usr
+1378 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/glob-base
+1379 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/glob-base
+1380 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1381 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/glob-parent
+1382 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/glob-parent
+1383 info lifecycle glob-parent@2.0.0~preuninstall: glob-parent@2.0.0
+1384 silly lifecycle glob-parent@2.0.0~preuninstall: no script for preuninstall, continuing
+1385 info lifecycle glob-parent@2.0.0~uninstall: glob-parent@2.0.0
+1386 silly lifecycle glob-parent@2.0.0~uninstall: no script for uninstall, continuing
+1387 verbose unbuild rmStuff glob-parent@2.0.0 from /usr/lib/node_modules
+1388 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1389 info lifecycle glob-parent@2.0.0~postuninstall: glob-parent@2.0.0
+1390 silly lifecycle glob-parent@2.0.0~postuninstall: no script for postuninstall, continuing
+1391 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/glob-parent is being purged from base /usr
+1392 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/glob-parent
+1393 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/glob-parent
+1394 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1395 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/is-glob
+1396 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/is-glob
+1397 info lifecycle is-glob@2.0.1~preuninstall: is-glob@2.0.1
+1398 silly lifecycle is-glob@2.0.1~preuninstall: no script for preuninstall, continuing
+1399 info lifecycle is-glob@2.0.1~uninstall: is-glob@2.0.1
+1400 silly lifecycle is-glob@2.0.1~uninstall: no script for uninstall, continuing
+1401 verbose unbuild rmStuff is-glob@2.0.1 from /usr/lib/node_modules
+1402 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1403 info lifecycle is-glob@2.0.1~postuninstall: is-glob@2.0.1
+1404 silly lifecycle is-glob@2.0.1~postuninstall: no script for postuninstall, continuing
+1405 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/is-glob is being purged from base /usr
+1406 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/is-glob
+1407 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/is-glob
+1408 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1409 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/extglob
+1410 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/extglob
+1411 info lifecycle extglob@0.3.2~preuninstall: extglob@0.3.2
+1412 silly lifecycle extglob@0.3.2~preuninstall: no script for preuninstall, continuing
+1413 info lifecycle extglob@0.3.2~uninstall: extglob@0.3.2
+1414 silly lifecycle extglob@0.3.2~uninstall: no script for uninstall, continuing
+1415 verbose unbuild rmStuff extglob@0.3.2 from /usr/lib/node_modules
+1416 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1417 info lifecycle extglob@0.3.2~postuninstall: extglob@0.3.2
+1418 silly lifecycle extglob@0.3.2~postuninstall: no script for postuninstall, continuing
+1419 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/extglob is being purged from base /usr
+1420 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/extglob
+1421 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/extglob
+1422 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1423 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/is-extglob
+1424 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/is-extglob
+1425 info lifecycle is-extglob@1.0.0~preuninstall: is-extglob@1.0.0
+1426 silly lifecycle is-extglob@1.0.0~preuninstall: no script for preuninstall, continuing
+1427 info lifecycle is-extglob@1.0.0~uninstall: is-extglob@1.0.0
+1428 silly lifecycle is-extglob@1.0.0~uninstall: no script for uninstall, continuing
+1429 verbose unbuild rmStuff is-extglob@1.0.0 from /usr/lib/node_modules
+1430 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1431 info lifecycle is-extglob@1.0.0~postuninstall: is-extglob@1.0.0
+1432 silly lifecycle is-extglob@1.0.0~postuninstall: no script for postuninstall, continuing
+1433 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/is-extglob is being purged from base /usr
+1434 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/is-extglob
+1435 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/is-extglob
+1436 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1437 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/is-extendable
+1438 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/is-extendable
+1439 info lifecycle is-extendable@0.1.1~preuninstall: is-extendable@0.1.1
+1440 silly lifecycle is-extendable@0.1.1~preuninstall: no script for preuninstall, continuing
+1441 info lifecycle is-extendable@0.1.1~uninstall: is-extendable@0.1.1
+1442 silly lifecycle is-extendable@0.1.1~uninstall: no script for uninstall, continuing
+1443 verbose unbuild rmStuff is-extendable@0.1.1 from /usr/lib/node_modules
+1444 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1445 info lifecycle is-extendable@0.1.1~postuninstall: is-extendable@0.1.1
+1446 silly lifecycle is-extendable@0.1.1~postuninstall: no script for postuninstall, continuing
+1447 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/is-extendable is being purged from base /usr
+1448 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/is-extendable
+1449 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/is-extendable
+1450 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1451 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/is-dotfile
+1452 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/is-dotfile
+1453 info lifecycle is-dotfile@1.0.2~preuninstall: is-dotfile@1.0.2
+1454 silly lifecycle is-dotfile@1.0.2~preuninstall: no script for preuninstall, continuing
+1455 info lifecycle is-dotfile@1.0.2~uninstall: is-dotfile@1.0.2
+1456 silly lifecycle is-dotfile@1.0.2~uninstall: no script for uninstall, continuing
+1457 verbose unbuild rmStuff is-dotfile@1.0.2 from /usr/lib/node_modules
+1458 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1459 info lifecycle is-dotfile@1.0.2~postuninstall: is-dotfile@1.0.2
+1460 silly lifecycle is-dotfile@1.0.2~postuninstall: no script for postuninstall, continuing
+1461 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/is-dotfile is being purged from base /usr
+1462 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/is-dotfile
+1463 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/is-dotfile
+1464 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1465 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/is-buffer
+1466 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/is-buffer
+1467 info lifecycle is-buffer@1.1.5~preuninstall: is-buffer@1.1.5
+1468 silly lifecycle is-buffer@1.1.5~preuninstall: no script for preuninstall, continuing
+1469 info lifecycle is-buffer@1.1.5~uninstall: is-buffer@1.1.5
+1470 silly lifecycle is-buffer@1.1.5~uninstall: no script for uninstall, continuing
+1471 verbose unbuild rmStuff is-buffer@1.1.5 from /usr/lib/node_modules
+1472 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1473 info lifecycle is-buffer@1.1.5~postuninstall: is-buffer@1.1.5
+1474 silly lifecycle is-buffer@1.1.5~postuninstall: no script for postuninstall, continuing
+1475 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/is-buffer is being purged from base /usr
+1476 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/is-buffer
+1477 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/is-buffer
+1478 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1479 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/ini
+1480 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/ini
+1481 info lifecycle ini@1.3.4~preuninstall: ini@1.3.4
+1482 silly lifecycle ini@1.3.4~preuninstall: no script for preuninstall, continuing
+1483 info lifecycle ini@1.3.4~uninstall: ini@1.3.4
+1484 silly lifecycle ini@1.3.4~uninstall: no script for uninstall, continuing
+1485 verbose unbuild rmStuff ini@1.3.4 from /usr/lib/node_modules
+1486 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1487 info lifecycle ini@1.3.4~postuninstall: ini@1.3.4
+1488 silly lifecycle ini@1.3.4~postuninstall: no script for postuninstall, continuing
+1489 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/ini is being purged from base /usr
+1490 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/ini
+1491 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/ini
+1492 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1493 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/has-ansi
+1494 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/has-ansi
+1495 info lifecycle has-ansi@2.0.0~preuninstall: has-ansi@2.0.0
+1496 silly lifecycle has-ansi@2.0.0~preuninstall: no script for preuninstall, continuing
+1497 info lifecycle has-ansi@2.0.0~uninstall: has-ansi@2.0.0
+1498 silly lifecycle has-ansi@2.0.0~uninstall: no script for uninstall, continuing
+1499 verbose unbuild rmStuff has-ansi@2.0.0 from /usr/lib/node_modules
+1500 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1501 info lifecycle has-ansi@2.0.0~postuninstall: has-ansi@2.0.0
+1502 silly lifecycle has-ansi@2.0.0~postuninstall: no script for postuninstall, continuing
+1503 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/has-ansi is being purged from base /usr
+1504 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/has-ansi
+1505 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/has-ansi
+1506 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1507 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/detect-file
+1508 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/detect-file
+1509 info lifecycle detect-file@0.1.0~preuninstall: detect-file@0.1.0
+1510 silly lifecycle detect-file@0.1.0~preuninstall: no script for preuninstall, continuing
+1511 info lifecycle detect-file@0.1.0~uninstall: detect-file@0.1.0
+1512 silly lifecycle detect-file@0.1.0~uninstall: no script for uninstall, continuing
+1513 verbose unbuild rmStuff detect-file@0.1.0 from /usr/lib/node_modules
+1514 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1515 info lifecycle detect-file@0.1.0~postuninstall: detect-file@0.1.0
+1516 silly lifecycle detect-file@0.1.0~postuninstall: no script for postuninstall, continuing
+1517 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/detect-file is being purged from base /usr
+1518 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/detect-file
+1519 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/detect-file
+1520 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1521 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/fs-exists-sync
+1522 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/fs-exists-sync
+1523 info lifecycle fs-exists-sync@0.1.0~preuninstall: fs-exists-sync@0.1.0
+1524 silly lifecycle fs-exists-sync@0.1.0~preuninstall: no script for preuninstall, continuing
+1525 info lifecycle fs-exists-sync@0.1.0~uninstall: fs-exists-sync@0.1.0
+1526 silly lifecycle fs-exists-sync@0.1.0~uninstall: no script for uninstall, continuing
+1527 verbose unbuild rmStuff fs-exists-sync@0.1.0 from /usr/lib/node_modules
+1528 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1529 info lifecycle fs-exists-sync@0.1.0~postuninstall: fs-exists-sync@0.1.0
+1530 silly lifecycle fs-exists-sync@0.1.0~postuninstall: no script for postuninstall, continuing
+1531 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/fs-exists-sync is being purged from base /usr
+1532 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/fs-exists-sync
+1533 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/fs-exists-sync
+1534 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1535 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/for-own
+1536 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/for-own
+1537 info lifecycle for-own@0.1.5~preuninstall: for-own@0.1.5
+1538 silly lifecycle for-own@0.1.5~preuninstall: no script for preuninstall, continuing
+1539 info lifecycle for-own@0.1.5~uninstall: for-own@0.1.5
+1540 silly lifecycle for-own@0.1.5~uninstall: no script for uninstall, continuing
+1541 verbose unbuild rmStuff for-own@0.1.5 from /usr/lib/node_modules
+1542 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1543 info lifecycle for-own@0.1.5~postuninstall: for-own@0.1.5
+1544 silly lifecycle for-own@0.1.5~postuninstall: no script for postuninstall, continuing
+1545 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/for-own is being purged from base /usr
+1546 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/for-own
+1547 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/for-own
+1548 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1549 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/for-in
+1550 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/for-in
+1551 info lifecycle for-in@1.0.2~preuninstall: for-in@1.0.2
+1552 silly lifecycle for-in@1.0.2~preuninstall: no script for preuninstall, continuing
+1553 info lifecycle for-in@1.0.2~uninstall: for-in@1.0.2
+1554 silly lifecycle for-in@1.0.2~uninstall: no script for uninstall, continuing
+1555 verbose unbuild rmStuff for-in@1.0.2 from /usr/lib/node_modules
+1556 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1557 info lifecycle for-in@1.0.2~postuninstall: for-in@1.0.2
+1558 silly lifecycle for-in@1.0.2~postuninstall: no script for postuninstall, continuing
+1559 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/for-in is being purged from base /usr
+1560 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/for-in
+1561 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/for-in
+1562 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1563 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/flagged-respawn
+1564 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/flagged-respawn
+1565 info lifecycle flagged-respawn@0.3.2~preuninstall: flagged-respawn@0.3.2
+1566 silly lifecycle flagged-respawn@0.3.2~preuninstall: no script for preuninstall, continuing
+1567 info lifecycle flagged-respawn@0.3.2~uninstall: flagged-respawn@0.3.2
+1568 silly lifecycle flagged-respawn@0.3.2~uninstall: no script for uninstall, continuing
+1569 verbose unbuild rmStuff flagged-respawn@0.3.2 from /usr/lib/node_modules
+1570 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1571 info lifecycle flagged-respawn@0.3.2~postuninstall: flagged-respawn@0.3.2
+1572 silly lifecycle flagged-respawn@0.3.2~postuninstall: no script for postuninstall, continuing
+1573 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/flagged-respawn is being purged from base /usr
+1574 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/flagged-respawn
+1575 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/flagged-respawn
+1576 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1577 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/filename-regex
+1578 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/filename-regex
+1579 info lifecycle filename-regex@2.0.1~preuninstall: filename-regex@2.0.1
+1580 silly lifecycle filename-regex@2.0.1~preuninstall: no script for preuninstall, continuing
+1581 info lifecycle filename-regex@2.0.1~uninstall: filename-regex@2.0.1
+1582 silly lifecycle filename-regex@2.0.1~uninstall: no script for uninstall, continuing
+1583 verbose unbuild rmStuff filename-regex@2.0.1 from /usr/lib/node_modules
+1584 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1585 info lifecycle filename-regex@2.0.1~postuninstall: filename-regex@2.0.1
+1586 silly lifecycle filename-regex@2.0.1~postuninstall: no script for postuninstall, continuing
+1587 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/filename-regex is being purged from base /usr
+1588 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/filename-regex
+1589 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/filename-regex
+1590 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1591 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/extend
+1592 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/extend
+1593 info lifecycle extend@3.0.1~preuninstall: extend@3.0.1
+1594 silly lifecycle extend@3.0.1~preuninstall: no script for preuninstall, continuing
+1595 info lifecycle extend@3.0.1~uninstall: extend@3.0.1
+1596 silly lifecycle extend@3.0.1~uninstall: no script for uninstall, continuing
+1597 verbose unbuild rmStuff extend@3.0.1 from /usr/lib/node_modules
+1598 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1599 info lifecycle extend@3.0.1~postuninstall: extend@3.0.1
+1600 silly lifecycle extend@3.0.1~postuninstall: no script for postuninstall, continuing
+1601 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/extend is being purged from base /usr
+1602 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/extend
+1603 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/extend
+1604 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1605 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/escape-string-regexp
+1606 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/escape-string-regexp
+1607 info lifecycle escape-string-regexp@1.0.5~preuninstall: escape-string-regexp@1.0.5
+1608 silly lifecycle escape-string-regexp@1.0.5~preuninstall: no script for preuninstall, continuing
+1609 info lifecycle escape-string-regexp@1.0.5~uninstall: escape-string-regexp@1.0.5
+1610 silly lifecycle escape-string-regexp@1.0.5~uninstall: no script for uninstall, continuing
+1611 verbose unbuild rmStuff escape-string-regexp@1.0.5 from /usr/lib/node_modules
+1612 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1613 info lifecycle escape-string-regexp@1.0.5~postuninstall: escape-string-regexp@1.0.5
+1614 silly lifecycle escape-string-regexp@1.0.5~postuninstall: no script for postuninstall, continuing
+1615 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/escape-string-regexp is being purged from base /usr
+1616 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/escape-string-regexp
+1617 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/escape-string-regexp
+1618 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1619 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/async
+1620 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/async
+1621 info lifecycle async@0.2.10~preuninstall: async@0.2.10
+1622 silly lifecycle async@0.2.10~preuninstall: no script for preuninstall, continuing
+1623 info lifecycle async@0.2.10~uninstall: async@0.2.10
+1624 silly lifecycle async@0.2.10~uninstall: no script for uninstall, continuing
+1625 verbose unbuild rmStuff async@0.2.10 from /usr/lib/node_modules
+1626 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1627 info lifecycle async@0.2.10~postuninstall: async@0.2.10
+1628 silly lifecycle async@0.2.10~postuninstall: no script for postuninstall, continuing
+1629 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/async is being purged from base /usr
+1630 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/async
+1631 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/async
+1632 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1633 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/array-unique
+1634 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/array-unique
+1635 info lifecycle array-unique@0.2.1~preuninstall: array-unique@0.2.1
+1636 silly lifecycle array-unique@0.2.1~preuninstall: no script for preuninstall, continuing
+1637 info lifecycle array-unique@0.2.1~uninstall: array-unique@0.2.1
+1638 silly lifecycle array-unique@0.2.1~uninstall: no script for uninstall, continuing
+1639 verbose unbuild rmStuff array-unique@0.2.1 from /usr/lib/node_modules
+1640 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1641 info lifecycle array-unique@0.2.1~postuninstall: array-unique@0.2.1
+1642 silly lifecycle array-unique@0.2.1~postuninstall: no script for postuninstall, continuing
+1643 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/array-unique is being purged from base /usr
+1644 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/array-unique
+1645 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/array-unique
+1646 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1647 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/arr-diff
+1648 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/arr-diff
+1649 info lifecycle arr-diff@2.0.0~preuninstall: arr-diff@2.0.0
+1650 silly lifecycle arr-diff@2.0.0~preuninstall: no script for preuninstall, continuing
+1651 info lifecycle arr-diff@2.0.0~uninstall: arr-diff@2.0.0
+1652 silly lifecycle arr-diff@2.0.0~uninstall: no script for uninstall, continuing
+1653 verbose unbuild rmStuff arr-diff@2.0.0 from /usr/lib/node_modules
+1654 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1655 info lifecycle arr-diff@2.0.0~postuninstall: arr-diff@2.0.0
+1656 silly lifecycle arr-diff@2.0.0~postuninstall: no script for postuninstall, continuing
+1657 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/arr-diff is being purged from base /usr
+1658 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/arr-diff
+1659 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/arr-diff
+1660 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1661 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/arr-flatten
+1662 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/arr-flatten
+1663 info lifecycle arr-flatten@1.0.3~preuninstall: arr-flatten@1.0.3
+1664 silly lifecycle arr-flatten@1.0.3~preuninstall: no script for preuninstall, continuing
+1665 info lifecycle arr-flatten@1.0.3~uninstall: arr-flatten@1.0.3
+1666 silly lifecycle arr-flatten@1.0.3~uninstall: no script for uninstall, continuing
+1667 verbose unbuild rmStuff arr-flatten@1.0.3 from /usr/lib/node_modules
+1668 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1669 info lifecycle arr-flatten@1.0.3~postuninstall: arr-flatten@1.0.3
+1670 silly lifecycle arr-flatten@1.0.3~postuninstall: no script for postuninstall, continuing
+1671 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/arr-flatten is being purged from base /usr
+1672 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/arr-flatten
+1673 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/arr-flatten
+1674 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1675 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/ansi-styles
+1676 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/ansi-styles
+1677 info lifecycle ansi-styles@2.2.1~preuninstall: ansi-styles@2.2.1
+1678 silly lifecycle ansi-styles@2.2.1~preuninstall: no script for preuninstall, continuing
+1679 info lifecycle ansi-styles@2.2.1~uninstall: ansi-styles@2.2.1
+1680 silly lifecycle ansi-styles@2.2.1~uninstall: no script for uninstall, continuing
+1681 verbose unbuild rmStuff ansi-styles@2.2.1 from /usr/lib/node_modules
+1682 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1683 info lifecycle ansi-styles@2.2.1~postuninstall: ansi-styles@2.2.1
+1684 silly lifecycle ansi-styles@2.2.1~postuninstall: no script for postuninstall, continuing
+1685 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/ansi-styles is being purged from base /usr
+1686 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/ansi-styles
+1687 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/ansi-styles
+1688 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more/node_modules
+1689 silly remove /usr/lib/node_modules/shipit_cli_more/node_modules/ansi-regex
+1690 verbose unbuild lib/node_modules/shipit_cli_more/node_modules/ansi-regex
+1691 info lifecycle ansi-regex@2.1.1~preuninstall: ansi-regex@2.1.1
+1692 silly lifecycle ansi-regex@2.1.1~preuninstall: no script for preuninstall, continuing
+1693 info lifecycle ansi-regex@2.1.1~uninstall: ansi-regex@2.1.1
+1694 silly lifecycle ansi-regex@2.1.1~uninstall: no script for uninstall, continuing
+1695 verbose unbuild rmStuff ansi-regex@2.1.1 from /usr/lib/node_modules
+1696 verbose unbuild rmStuff in /usr/lib/node_modules/shipit_cli_more/node_modules
+1697 info lifecycle ansi-regex@2.1.1~postuninstall: ansi-regex@2.1.1
+1698 silly lifecycle ansi-regex@2.1.1~postuninstall: no script for postuninstall, continuing
+1699 silly gentlyRm /usr/lib/node_modules/shipit_cli_more/node_modules/ansi-regex is being purged from base /usr
+1700 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/shipit_cli_more/node_modules/ansi-regex
+1701 silly vacuum-fs purging /usr/lib/node_modules/shipit_cli_more/node_modules/ansi-regex
+1702 silly vacuum-fs removing /usr/lib/node_modules/shipit_cli_more/node_modules
+1703 silly vacuum-fs quitting because other entries in /usr/lib/node_modules/shipit_cli_more
+1704 silly doSerial move 0
+1705 silly doSerial finalize 1
+1706 silly finalize /usr/lib/node_modules/shipit_cli_more
+1707 silly doSerial build 1
+1708 silly build shipit_cli_more@1.0.0
+1709 info linkStuff shipit_cli_more@1.0.0
+1710 silly linkStuff shipit_cli_more@1.0.0 has /usr/lib/node_modules as its parent node_modules
+1711 silly linkStuff shipit_cli_more@1.0.0 is part of a global install
+1712 silly linkStuff shipit_cli_more@1.0.0 is installed into a global node_modules
+1713 silly linkStuff shipit_cli_more@1.0.0 is installed into the top-level global node_modules
+1714 verbose linkBins shipit_cli_more@1.0.0
+1715 verbose link bins [ { shipit: './bin/shipit-t' }, '/usr/bin', true ]
+1716 verbose linkMans shipit_cli_more@1.0.0
+1717 verbose unlock done using /root/.npm/_locks/staging-a072192f34a17023.lock for /usr/lib/node_modules/.staging
+1718 silly rollbackFailedOptional Starting
+1719 silly rollbackFailedOptional Finishing
+1720 silly runTopLevelLifecycles Finishing
+1721 silly install printInstalled
+1722 verbose stack Error: ENOENT: no such file or directory, chmod '/usr/lib/node_modules/shipit_cli_more/bin/shipit-t'
+1722 verbose stack     at Error (native)
+1723 verbose cwd /data1/www/shipit_cli_more
+1724 error Linux 3.10.0-229.el7.x86_64
+1725 error argv "/usr/bin/node" "/usr/bin/npm" "install" "-g" "https://github.com/xiaobudongzhang/shipit_cli_more"
+1726 error node v6.9.1
+1727 error npm  v3.10.8
+1728 error path /usr/lib/node_modules/shipit_cli_more/bin/shipit-t
+1729 error code ENOENT
+1730 error errno -2
+1731 error syscall chmod
+1732 error enoent ENOENT: no such file or directory, chmod '/usr/lib/node_modules/shipit_cli_more/bin/shipit-t'
+1733 error enoent ENOENT: no such file or directory, chmod '/usr/lib/node_modules/shipit_cli_more/bin/shipit-t'
+1733 error enoent This is most likely not a problem with npm itself
+1733 error enoent and is related to npm not being able to find a file.
+1734 verbose exit [ -2, true ]

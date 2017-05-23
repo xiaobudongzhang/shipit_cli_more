@@ -11,9 +11,8 @@
     "url": "git+ssh://git@github.com/xiaobudongzhang/shipit_cli_more.git"
   },
   "bin": {
-    "shipit": "./bin/shipit-t"
+    "shipit-t": "./bin/shipit-t"
   },
-
   "keywords": [
     "shipit",
     "deploy"
