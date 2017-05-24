@@ -21,7 +21,7 @@ cli.launch({
   cwd: argv.cwd,
   configPath: argv.shipitfile,
   require: argv.require,
-  completion: argv.completion
+  completion: argv.completion,
 }, invoke);
 
 /**
@@ -31,6 +31,8 @@ cli.launch({
  */
 
 function invoke(env) {
+
+
   if (argv.version) {
     console.info('v%s', pkg.version);
     exit(0);
@@ -40,20 +42,35 @@ function invoke(env) {
     console.error(chalk.red('shipitfile not found'));
     exit(1);
   }
-
-  if (argv._.length === 0) {
+  
+  if (!argv.env ) {
     console.error(chalk.red('environment not found'));
     exit(1);
   }
 
   // Run the 'default' task if no task is specified
-  var tasks = argv._.slice(2);
-  if (tasks.length === 0) {
-    tasks.push('default');
+  var tasks = argv.task;
+  
+  if (!tasks) {
+    tasks='default';
+  }
+  
+  let branch=argv.branch
+  if(!argv.branch){
+	branch='master'
+  }
+  
+	
+  let project_name=argv.name
+  if(!argv.name){
+    console.error(chalk.red('name not found'));
+    exit(1);
+
   }
 
+
   try {
-    initShipit(argv._[0], env.configPath,argv._[2], tasks);
+    initShipit(argv.env, env.configPath, [tasks],branch,project_name);
   } catch(e) {
     console.error(chalk.red(e.message));
     exit(1);
@@ -68,13 +85,13 @@ function invoke(env) {
  * @param {string[]} tasks Tasks
  */
 
-function initShipit(env, shipfile,branch, tasks) {
-
+function initShipit(env, shipfile,tasks,bran,project_name) {
+//console.log(arguments)
   // Create.
-  var shipit = new Shipit({environment: env,branch});
+  var shipit = new Shipit({environment: env,branch:bran});
 
   // Load shipfile.
-  var pendingConfig = require(shipfile)(shipit);
+  var pendingConfig = require(shipfile)(shipit,project_name);
 
   var done = function() {
 

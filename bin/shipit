@@ -47,13 +47,16 @@ function invoke(env) {
   }
 
   // Run the 'default' task if no task is specified
-  var tasks = argv._.slice(2);
+  console.log(argv._)
+  var tasks = argv._.slice(1);
+  
+  console.log(argv._)
   if (tasks.length === 0) {
     tasks.push('default');
   }
 
   try {
-    initShipit(argv._[0], env.configPath,argv._[2], tasks);
+    initShipit(argv._[0], env.configPath, tasks);
   } catch(e) {
     console.error(chalk.red(e.message));
     exit(1);
@@ -68,10 +71,10 @@ function invoke(env) {
  * @param {string[]} tasks Tasks
  */
 
-function initShipit(env, shipfile,branch, tasks) {
+function initShipit(env, shipfile, tasks) {
 
   // Create.
-  var shipit = new Shipit({environment: env,branch});
+  var shipit = new Shipit({environment: env});
 
   // Load shipfile.
   var pendingConfig = require(shipfile)(shipit);
