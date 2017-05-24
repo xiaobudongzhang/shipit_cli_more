@@ -1,0 +1,66 @@
+module.exports=function(shipit,config){
+console.log(shipit)
+    /**
+    //发布事件触发的
+    shipit.on('fetched', function () {
+
+        if(shipit.environment=='backend_pro'){
+            shipit.start('backend_after_fetched_pro');
+        }else if(shipit.environment=='backend_qa'){
+            shipit.start('backend_after_fetched_qa');
+        }
+
+    });
+   
+
+    //前端一步到位的发布前端
+    shipit.task('all',function(){
+        if(shipit.environment=='frontend_qa'|shipit.environment=='frontend_pro'){
+            shipit.start('front_all_build');
+        }
+    });
+
+    shipit.blTask('front_all_build', function () {
+        console.log("##############1.build##############")
+       shipit.local('cd /data1/www/stat && npm run build').then(function(res){
+           if(res.stderr!=''){
+               console.log("##############1.build failed ##############")
+               console.log(res.stderr)
+               return;
+           }
+            shipit.start('front_all_push');
+       });
+
+    });
+
+    shipit.blTask('front_all_push', function () {
+         console.log("##############2.push##############")
+
+       shipit.local('cd /data1/www/stat_frontend && git pull && git add --all && git commit -m "update"&& git push').then(function(res){
+           if(res.stderr!=''){
+               var patt1 = new RegExp("warning");
+               var result = patt1.test(res.stderr);
+
+               if(result){
+
+               } else {
+                   console.log("##############2.push failed ##############")
+                   console.log(res.stderr)
+                   return;
+               }
+           }
+            shipit.start('front_all_deploy');
+       });
+
+
+
+    });
+
+    shipit.blTask('front_all_deploy', function () {
+         console.log("##############3.deploy##############")
+        shipit.start('deploy');
+    });
+*/
+
+
+}

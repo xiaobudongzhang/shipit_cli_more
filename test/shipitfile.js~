@@ -1,0 +1,16 @@
+module.exports = function (shipit,project) {
+  require('shipit-deploy')(shipit);
+  
+    let config={//公用的参数
+	server:{
+	    dev:'root@218.244.135.235',
+	    qa:'root@101.201.41.44',
+	    prod:'root@101.201.143.65',
+	    testme:'root@192.168.1.38'
+	}
+    }
+
+    require(`./config/${project}`)(shipit,config);
+
+    
+};

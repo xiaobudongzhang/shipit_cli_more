@@ -1,0 +1,46 @@
+module.exports=function(shipit,config){
+      
+    let workspce='/tmp/deploy/workplace/stat_backend';
+    let base = {
+        workspace:workspce ,
+        deployTo: '/home/wwwroot/default/stat_frontend',
+        repositoryUrl: 'git@git.tuzuu.com:statistics/stat_frontend.git',
+        ignores: ['.git'],
+        rsync: ['--delete-after'],//rsync参数
+        keepReleases: 4,
+        //key: 'C:/Users/DEV-Z/.ssh'
+        deleteOnRollback: false,
+    };
+
+     
+    shipit.initConfig({   
+      test:Object.assign(
+        {
+            servers: config.server.testme
+        },base),
+
+    dev:Object.assign(
+        {
+            servers: config.server.dev
+        },base),
+
+	
+    qa:Object.assign(
+        {
+            servers: config.server.qa
+        },base),
+
+	
+    pro:Object.assign(
+	{
+            servers: config.server.pro
+	},base),
+    
+	
+  });
+
+
+    //事件
+    require(`./task.js`)(shipit,config);
+
+};
