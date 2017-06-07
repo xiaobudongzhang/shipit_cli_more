@@ -50,7 +50,7 @@ function invoke(env) {
   console.log(argv._)
   var tasks = argv._.slice(1);
   
-  console.log(argv._)
+  
   if (tasks.length === 0) {
     tasks.push('default');
   }

@@ -32,6 +32,10 @@ cli.launch({
 
 function invoke(env) {
 
+  if(argv.help){
+	console.log(chalk.yellow(' --name    必填 项目名称 \n --env     可选(默认dev) 发布环境\n --task    可选(默认deploy) 事件 \n --branch  可选(默认master) 发布分支\n'))
+	exit(0); 
+ }
 
   if (argv.version) {
     console.info('v%s', pkg.version);
@@ -43,34 +47,34 @@ function invoke(env) {
     exit(1);
   }
   
-  if (!argv.env ) {
-    console.error(chalk.red('environment not found'));
-    exit(1);
+  let envme='dev'
+  if (argv.env ) {
+    envme=argv.env
   }
 
   // Run the 'default' task if no task is specified
-  var tasks = argv.task;
-  
-  if (!tasks) {
-    tasks='default';
+ 
+  let tasks='deploy' 
+  if (argv.task) {
+     tasks = argv.task;
   }
   
-  let branch=argv.branch
-  if(!argv.branch){
-	branch='master'
+  let  branch='master'
+  if(argv.branch){
+	branch=argv.branch
   }
   
 	
-  let project_name=argv.name
+
   if(!argv.name){
     console.error(chalk.red('name not found'));
     exit(1);
 
   }
-
+  let project_name=argv.name
 
   try {
-    initShipit(argv.env, env.configPath, [tasks],branch,project_name);
+    initShipit(envme, env.configPath, [tasks],branch,project_name);
   } catch(e) {
     console.error(chalk.red(e.message));
     exit(1);
