@@ -92,7 +92,7 @@ function invoke(env) {
 function initShipit(env, shipfile,tasks,bran,project_name) {
 //console.log(arguments)
   // Create.
-  var shipit = new Shipit({environment: env,branch:bran});
+  var shipit = new Shipit({environment: env,branch:bran,project_name:project_name});
 
   // Load shipfile.
   var pendingConfig = require(shipfile)(shipit,project_name);
